@@ -26,15 +26,20 @@ a:hover{
     text-decoration: none;
 }
 
+.nav{
+    display: block;
+}
+
 .nav__listas{
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    .lista{
+
+.nav__links{
         text-decoration: none;
         font-weight: normal;
         color: $linksColor !important;
-        .lista_h1 {
+        .nav__links__h1 {
             color: green !important;
             text-align: center;
             font-family: 'Anton', sans-serif;
@@ -58,6 +63,7 @@ a:hover{
     ul{
         padding: 0px;
     }
+
 
     .ofertas__container{
         display: flex;
@@ -112,7 +118,9 @@ a:hover{
     font-family: Helvetica; 
     background-color: $mainGreen;
     height: 102px;
-    a{
+}
+    
+.footer__info__links{
         margin-left: 20px;
         margin-right: 20px;
         font-size: 20px;
@@ -125,7 +133,6 @@ a:hover{
         }
     }
     
-}
 
 .footer__redes{
     height: 150px;
@@ -140,10 +147,12 @@ a:hover{
             margin-bottom: 15px;
         }
     }
-    a img{
+}
+
+.footer__logo__imagenes--margin{
         margin-right: 20px;
     }
-}
+
 
 
 .footer__contacto{
@@ -198,7 +207,7 @@ a:hover{
 }
 
 
-.brand__images{
+.brands__images{
     @extend .justifyAlign--spaceEvenly;
     padding-top: 15px;
     align-items: center;

@@ -2,9 +2,9 @@
  $titleSize: 50px;
 
 .nav__listas{
-    .lista{
+    .nav__links{
         font-size: $linksSize;
-        .lista_h1 { 
+        .nav__links__h1 { 
             font-size: $titleSize;    
         }
     }
