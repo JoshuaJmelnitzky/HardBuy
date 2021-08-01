@@ -1,0 +1,56 @@
+@import "mixin";
+
+.clasificacionProductos{
+    @extend .justifyAlign--center;
+    flex-direction: column;
+    @media only screen and (max-width:767px){
+        margin-top: 50px;
+        align-items: center;
+    }
+    .card{
+        width: 400px;
+        button{
+            color: black;
+            h3{
+                font-size: 16px;
+                font-weight: normal;
+            }
+            &:hover{
+                text-decoration: none;
+                background-color: #E3E4E5;
+            }
+        }
+        a{
+            color: #878787;
+        }
+    }
+    .card-body a{
+        padding-left: 30px;
+        &:hover{
+            color: black;
+            font-weight: 500;
+        }
+    }
+}
+
+.clasificacion__arrow{
+    margin-top: 5px;
+    float: right;
+}
+
+.ofertas__productos{
+    display: flex;
+    align-items: center;
+}
+
+.products__content{
+    height: 90px !important;
+    input{
+        font-size: 12px;
+    }  
+}
+
+.ofertas__container__productos--padding{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,376 @@
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .carousel-inner div img {
+    height: 250px; }
+  .brandFlex img {
+    width: 80px;
+    height: 40px; }
+  .ofertas {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding-left: 50px; }
+  .texto {
+    font-size: 20px; }
+  .ofertas p {
+    font-size: 20px;
+    padding: 20px; }
+  .containers div, .containers {
+    padding-bottom: 10px; }
+  img#optional {
+    display: none; } }
+
+@media only screen and (min-width: 767px) {
+  header p {
+    display: none; }
+  .main__info--img img {
+    height: 60px;
+    margin-top: 60px; }
+  .main__info--txt {
+    padding-top: 20px;
+    justify-content: space-evenly;
+    position: relative;
+    right: 30px; }
+  #imgSize {
+    width: 160px; } }
+
+.color {
+  background-color: #B7EFC5 !important; }
+
+.price {
+  color: blue;
+  font-style: italic; }
+
+.nav__listas .lista {
+  font-size: 25px; }
+  .nav__listas .lista .lista_h1 {
+    font-size: 50px; }
+
+footer h3 {
+  font-size: 19px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold; }
+
+.clientes {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; }
+  .clientes input {
+    border: 1px solid #ccc;
+    border-radius: 4px; }
+    .clientes input:focus {
+      border: 2px solid black;
+      font-size: 18px; }
+  .clientes .logIn {
+    margin-top: 20px; }
+    .clientes .logIn div .logIn__button {
+      background-color: #0071c9;
+      border: 1px solid #0071c9; }
+    .clientes .logIn div .fb__button {
+      background-color: #3b5998;
+      border: 1px solid #3b5998;
+      align-items: center; }
+    .clientes .logIn div .google__button {
+      background-color: #dd4b39;
+      border: 1px solid #dd4b39;
+      align-items: center; }
+    .clientes .logIn button {
+      width: 320px;
+      height: 40px;
+      color: #fff;
+      font-size: 13px;
+      border-radius: 6px;
+      font-weight: 600; }
+    .clientes .logIn span {
+      margin-right: 10px;
+      font-weight: 900;
+      font-size: 16px;
+      font-family: 'Lato', sans-serif; }
+  .clientes .cliente__campos div {
+    width: 320px; }
+  .clientes .new__cliente {
+    padding-top: 40px; }
+    .clientes .new__cliente form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .clientes .new__cliente form div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px; }
+    .clientes .new__cliente .checkbox {
+      margin-top: 30px;
+      text-align: center;
+      display: inline; }
+  .clientes .old__cliente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px; }
+    .clientes .old__cliente form {
+      flex-direction: column; }
+      .clientes .old__cliente form div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        justify-content: space-around; }
+
+.clientes__subtitle--sizeOld {
+  width: 60%; }
+  @media only screen and (max-width: 767px) {
+    .clientes__subtitle--sizeOld {
+      width: 90%; } }
+
+.clientes__subtitle--sizeNew {
+  width: 100%; }
+  @media only screen and (max-width: 767px) {
+    .clientes__subtitle--sizeNew {
+      width: 90%; } }
+
+.clientes__subtitle--padding {
+  margin-bottom: 40px; }
+
+.preguntas__help h2, .contacto__help h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 30px; }
+
+.preguntas__help .preguntas__texto, .contacto__help .preguntas__texto {
+  color: grey;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 30px; }
+  .preguntas__help .preguntas__texto div, .contacto__help .preguntas__texto div {
+    margin-bottom: 30px; }
+    .preguntas__help .preguntas__texto div span, .contacto__help .preguntas__texto div span {
+      color: #90C512 !important;
+      font-weight: 700; }
+
+.preguntas__help .ayudaContacto, .contacto__help .ayudaContacto {
+  flex-wrap: wrap;
+  margin-bottom: 70px; }
+  .preguntas__help .ayudaContacto div, .contacto__help .ayudaContacto div {
+    margin: 25px; }
+
+.clasificacionProductos {
+  flex-direction: column; }
+  @media only screen and (max-width: 767px) {
+    .clasificacionProductos {
+      margin-top: 50px;
+      align-items: center; } }
+  .clasificacionProductos .card {
+    width: 400px; }
+    .clasificacionProductos .card button {
+      color: black; }
+      .clasificacionProductos .card button h3 {
+        font-size: 16px;
+        font-weight: normal; }
+      .clasificacionProductos .card button:hover {
+        text-decoration: none;
+        background-color: #E3E4E5; }
+    .clasificacionProductos .card a {
+      color: #878787; }
+  .clasificacionProductos .card-body a {
+    padding-left: 30px; }
+    .clasificacionProductos .card-body a:hover {
+      color: black;
+      font-weight: 500; }
+
+.clasificacion__arrow {
+  margin-top: 5px;
+  float: right; }
+
+.ofertas__productos {
+  display: flex;
+  align-items: center; }
+
+.products__content {
+  height: 90px !important; }
+  .products__content input {
+    font-size: 12px; }
+
+.ofertas__container__productos--padding {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.error {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .error img {
+    width: 50%;
+    margin-bottom: 10px; }
+  @media only screen and (min-width: 767px) {
+    .error img {
+      margin-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .error img {
+      margin-right: 30px;
+      width: 80%;
+      margin-left: 30px; } }
+  .error h1, .error h2 {
+    font-size: 60px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    display: absolute; }
+  .error h2 {
+    font-size: 80px; }
+  .error .error__parrafo div {
+    font-weight: bold; }
+    .error .error__parrafo div a {
+      color: #90C512; }
+
+* {
+  list-style: none; }
+
+.justifyAlign--center, .clientes .logIn div .fb__button, .clientes .logIn div .google__button, .preguntas__help h2, .contacto__help h2, .preguntas__help .ayudaContacto, .contacto__help .ayudaContacto, .clasificacionProductos, .ofertas .ofertas__container .ofertas__image, .ofertas .ofertas__container .ofertas__content, .ofertas .ofertas__container .ofertas__content li, .footer__info, .footer__redes, .footer__contacto {
+  display: flex;
+  justify-content: center; }
+
+.justifyAlign--spaceEvenly, .preguntas__help .ayudaContacto div, .contacto__help .ayudaContacto div, .main__info .main__info--img, .main__info .main__info--txt, .brand__images {
+  display: flex;
+  justify-content: space-evenly; }
+
+a:hover {
+  text-decoration: none; }
+
+.nav__listas {
+  width: 100%;
+  justify-content: space-around;
+  align-items: center; }
+  .nav__listas .lista {
+    text-decoration: none;
+    font-weight: normal;
+    color: #424143 !important; }
+    .nav__listas .lista .lista_h1 {
+      color: green !important;
+      text-align: center;
+      font-family: 'Anton', sans-serif; }
+
+.ofertas p, .ofertas h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase; }
+
+.ofertas h4 {
+  font-size: 16px; }
+
+.ofertas ul {
+  padding: 0px; }
+
+.ofertas .ofertas__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 35px; }
+  .ofertas .ofertas__container div {
+    padding: 5px; }
+  .ofertas .ofertas__container .ofertas__image {
+    background-image: linear-gradient(#dae1d8, #B2D2A4);
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid darkgreen;
+    width: 150px;
+    height: 120px; }
+  .ofertas .ofertas__container .ofertas__content {
+    background-color: #fff;
+    border: 1px solid darkgreen;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 150px;
+    height: 80px;
+    text-align: center; }
+    .ofertas .ofertas__container .ofertas__content button {
+      height: 20px;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      margin-top: 2px; }
+    .ofertas .ofertas__container .ofertas__content .modal-content {
+      top: 150px; }
+
+.footer__info {
+  border-top: groove 1px black;
+  border-bottom: groove 1px black;
+  align-items: center;
+  font-style: italic;
+  font-family: Helvetica;
+  background-color: #B7EFC5;
+  height: 102px; }
+  .footer__info a {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #551A8B; }
+    @media only screen and (max-width: 767px) {
+      .footer__info a {
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 10px;
+        text-align: center; } }
+
+.footer__redes {
+  height: 150px;
+  background-color: #92E6A7;
+  flex-direction: column;
+  padding-left: 40px; }
+  @media only screen and (max-width: 767px) {
+    .footer__redes {
+      align-items: center;
+      padding-left: 0px; }
+      .footer__redes h3 {
+        margin-bottom: 15px; } }
+  .footer__redes a img {
+    margin-right: 20px; }
+
+.footer__contacto {
+  background-color: #92E6A7;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-end;
+  padding-right: 40px; }
+  @media only screen and (max-width: 767px) {
+    .footer__contacto {
+      align-items: center; }
+      .footer__contacto h3 {
+        margin-bottom: 15px; } }
+  .footer__contacto a img {
+    margin-right: 10px; }
+
+.footer__logos--animated {
+  display: flex;
+  flex-direction: row; }
+  .footer__logos--animated a:hover {
+    transform: translateY(-8px);
+    transition: all 0.3s; }
+
+.main__info .main__info--txt {
+  padding-right: 40px;
+  text-align: center;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100; }
+  .main__info .main__info--txt p {
+    margin: 0px; }
+
+.slider--padding {
+  padding: 0px !important; }
+
+.brand__images {
+  padding-top: 15px;
+  align-items: center; }
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 30px;
+  padding-bottom: 15px;
+  border-bottom: solid 1px black;
+  justify-content: center;
+  text-align: center; }
