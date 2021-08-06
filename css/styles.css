@@ -35,16 +35,16 @@
   #imgSize {
     width: 160px; } }
 
-.color {
+.nav__background--color {
   background-color: #B7EFC5 !important; }
 
 .price {
   color: blue;
   font-style: italic; }
 
-.nav__listas .lista {
+.nav__listas .nav__links {
   font-size: 25px; }
-  .nav__listas .lista .lista_h1 {
+  .nav__listas .nav__links .nav__links__h1 {
     font-size: 50px; }
 
 footer h3 {
@@ -232,22 +232,25 @@ footer h3 {
   display: flex;
   justify-content: center; }
 
-.justifyAlign--spaceEvenly, .preguntas__help .ayudaContacto div, .contacto__help .ayudaContacto div, .main__info .main__info--img, .main__info .main__info--txt, .brand__images {
+.justifyAlign--spaceEvenly, .preguntas__help .ayudaContacto div, .contacto__help .ayudaContacto div, .main__info .main__info--img, .main__info .main__info--txt, .brands__images {
   display: flex;
   justify-content: space-evenly; }
 
 a:hover {
   text-decoration: none; }
 
+.nav {
+  display: block; }
+
 .nav__listas {
   width: 100%;
   justify-content: space-around;
   align-items: center; }
-  .nav__listas .lista {
+  .nav__listas .nav__links {
     text-decoration: none;
     font-weight: normal;
     color: #424143 !important; }
-    .nav__listas .lista .lista_h1 {
+    .nav__listas .nav__links .nav__links__h1 {
       color: green !important;
       text-align: center;
       font-family: 'Anton', sans-serif; }
@@ -304,17 +307,18 @@ a:hover {
   font-family: Helvetica;
   background-color: #B7EFC5;
   height: 102px; }
-  .footer__info a {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 20px;
-    color: #551A8B; }
-    @media only screen and (max-width: 767px) {
-      .footer__info a {
-        font-size: 15px;
-        margin-left: 5px;
-        margin-right: 10px;
-        text-align: center; } }
+
+.footer__info__links {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: #551A8B; }
+  @media only screen and (max-width: 767px) {
+    .footer__info__links {
+      font-size: 15px;
+      margin-left: 5px;
+      margin-right: 10px;
+      text-align: center; } }
 
 .footer__redes {
   height: 150px;
@@ -327,8 +331,9 @@ a:hover {
       padding-left: 0px; }
       .footer__redes h3 {
         margin-bottom: 15px; } }
-  .footer__redes a img {
-    margin-right: 20px; }
+
+.footer__logo__imagenes--margin {
+  margin-right: 20px; }
 
 .footer__contacto {
   background-color: #92E6A7;
@@ -363,7 +368,7 @@ a:hover {
 .slider--padding {
   padding: 0px !important; }
 
-.brand__images {
+.brands__images {
   padding-top: 15px;
   align-items: center; }
 

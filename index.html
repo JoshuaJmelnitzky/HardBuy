@@ -25,142 +25,145 @@
   </head>
 
 
-  <body>
-    <!-- Nav --> 
-    <header class="container-fluid">
-      <div class="row color">
-        <div class="col-lg-12 col-xs-12">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light color lalala">
-            <p>Hardbuy</p>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto nav__listas">
-                <li class="nav-item active lista">
-                  <a class="nav-link" href="./views/products.html">Productos<span class="sr-only">(current)</span></a>
-                </li>
-                
-                <li class="nav-item dropdown menu lista">
-                  <a class="nav-link dropdown-toggle" href="./views/error404.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Arma tu PC
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./views/error404.html">AMD</a>
-                    <a class="dropdown-item" href="./views/error404.html">Intel</a>
-                  </div>
-                </li>
+<body>
+  <!-- Nav --> 
+  <header class="container-fluid nav">
+    <div class="row nav__background--color">
+      <div class="col-lg-12 col-xs-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav__background--color">
+          <p>Hardbuy</p>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto nav__listas">
+              <li class="nav-item active nav__links">
+                <a class="nav-link" href="./views/products.html">Productos<span class="sr-only">(current)</span></a>
+              </li>
+              
+              <li class="nav-item dropdown menu nav__links">
+                <a class="nav-link dropdown-toggle" href="./views/error404.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Arma tu PC
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./views/error404.html">AMD</a>
+                  <a class="dropdown-item" href="./views/error404.html">Intel</a>
+                </div>
+              </li>
 
-                <li class="nav-item lista">
-                  <h1>
-                    <a class="nav-link lista_h1" href="./index.html">HardBuy</a>
-                  </h1>
-                </li>
-    
-                <li class="nav-item lista">
-                  <a class="nav-link" href="./views/account.html">Mi Cuenta</a>
-                </li>
-    
-                <li class="nav-item lista">
-                  <a class="nav-link" href="./views/help.html">Ayuda</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-              </form>
-            </div>
-          </nav>
-        </div>
+              <li class="nav-item nav__links">
+                <h1>
+                  <a class="nav-link nav__links__h1" href="./index.html">HardBuy</a>
+                </h1>
+              </li>
+  
+              <li class="nav-item nav__links">
+                <a class="nav-link" href="./views/account.html">Mi Cuenta</a>
+              </li>
+  
+              <li class="nav-item nav__links">
+                <a class="nav-link" href="./views/help.html">Ayuda</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+          </div>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Slider -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 col-xs-12 slider--padding"> 
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/slider/slider1.jpg" class="d-block w-100" alt="slider placa de video">
+  <!-- Slider -->
+  <main>
+    <section class="slider">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-xs-12 slider--padding"> 
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img/slider/slider1.jpg" class="d-block w-100" alt="slider placa de video">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/slider/slider2.jpg" class="d-block w-100" alt="slider Nvidia">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/slider/slider3.jpg" class="d-block w-100" alt="slider AMD">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="./assets/img/slider/slider2.jpg" class="d-block w-100" alt="slider Nvidia">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/slider/slider3.jpg" class="d-block w-100" alt="slider AMD">
-              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
       </div>
-    </div>
-
+    </section>
+     
     <!-- Información -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-xs-12">
-          <section class="main__info">
-            <div class="main__info--img">
-                <img src="./assets/img/envios.png" alt="envíos" width="40" height="40">
-                <img src="./assets/img/maps.png" alt="mapa" width="40" height="40">
-                <img src="./assets/img/ahora12_18.png" alt="ahora 12 y 18" width="100" height="40" id="imgSize">
-            </div>
-            <div class="main__info--txt">
-                <div>
-                    <p>Envíos a</p>
-                    <p>todo el pais</p>
-                </div>
-                <div>
-                    <p>Retiro en</p>
-                    <p>sucursal</p>
-                </div>
-                <div>
-                    <p>Ahora 12 y 18</p></div>
-            </div>
-        </section>
+    <section class="main__info">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-xs-12">
+              <div class="main__info--img">
+                  <img src="./assets/img/envios.png" alt="envíos" width="40" height="40">
+                  <img src="./assets/img/maps.png" alt="mapa" width="40" height="40">
+                  <img src="./assets/img/ahora12_18.png" alt="ahora 12 y 18" width="100" height="40" id="imgSize">
+              </div>
+              <div class="main__info--txt">
+                  <div>
+                      <p>Envíos a</p>
+                      <p>todo el pais</p>
+                  </div>
+                  <div>
+                      <p>Retiro en</p>
+                      <p>sucursal</p>
+                  </div>
+                  <div>
+                      <p>Ahora 12 y 18</p></div>
+              </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!-- Marcas -->
-    <div class="container">
-      <div class="row" >
-        <div class="col-lg-12 col-xs-12">
-          <section>
-            <h3 class="subtitle">¡Las mejores marcas están aquí!</h3>
-            <div class="brand__images">
-                <img src="./assets/img/brands/aorus_logo.png" alt="logo aorus" height="50" width="120">
-                <img src="./assets/img/brands/corsair_logo.png" alt="logo corsair" height="50" width="120">
-                <img src="./assets/img/brands/gigabyte_logo.png" alt="logo gigabyte" height="50" width="120">
-                <img id="optional" src="./assets/img/brands/msi_logo.png" alt="logo msi" height="50" width="120">
-                <img id="optional" src="./assets/img/brands/razer_logo.png" alt="logo razer" height="50" width="120">
-                <img id="optional" src="./assets/img/brands/rog_logo.png" alt="logo rog" height="70" width="120">
-            </div>
-          </section>
+    <section class="brands">
+      <div class="container">
+        <div class="row" >
+          <div class="col-lg-12 col-xs-12">  
+              <h3 class="subtitle">¡Las mejores marcas están aquí!</h3>
+              <div class="brands__images">
+                  <img src="./assets/img/brands/aorus_logo.png" alt="logo aorus" height="50" width="120">
+                  <img src="./assets/img/brands/corsair_logo.png" alt="logo corsair" height="50" width="120">
+                  <img src="./assets/img/brands/gigabyte_logo.png" alt="logo gigabyte" height="50" width="120">
+                  <img id="optional" src="./assets/img/brands/msi_logo.png" alt="logo msi" height="50" width="120">
+                  <img id="optional" src="./assets/img/brands/razer_logo.png" alt="logo razer" height="50" width="120">
+                  <img id="optional" src="./assets/img/brands/rog_logo.png" alt="logo rog" height="70" width="120">
+              </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-  
-    
+
     <!-- Ofertas productos -->
+<<<<<<< HEAD
     <div class="container">
       <div class="row">
         <section class="col-lg-12 col-xs-12 ofertas">
@@ -211,14 +214,69 @@
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                   </div>
+=======
+    <section class="ofertas">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-xs-12">
+            <h3 class="subtitle ofertas__subtitle--width">Ofertas destacadas</h3>
+            <div>   
+                <h4>Monitores</h4>
+            </div>
+            <div class="ofertas__container">
+
+              <div class="ofertas__producto1">
+                <div class="ofertas__image">
+                    <img src="./assets/img/ofertas/zowie_2546.webp" alt="monitor zowie" width="100" height="100">
+                </div>
+                <div class="ofertas__content">
+                    <ul>
+                        <li>Zowie xl 2546</li>
+                        <li class="price">$35000</li>
+                        <li>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Ver más
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <strong>Características</strong>
+                                  <ul>
+                                    <li>Tamaño: 24.5"</li>
+                                    <li>Relación aspecto: 16:9</li>
+                                    <li>Max. resolución: 1920 x 1080 at 240Hz (HDMI 2.0, DP)</li>
+                                    <li>Tipo de panel: TN</li>
+                                    <li>Tecnología DyAc</li>
+                                    <li>S Switch (Profiles to go)</li>
+                                  </ul>
+                                  <strong>Dimensiones y peso</strong>
+                                  <ul>
+                                    <li>Dimensiones (max. altura): 515.43 x 569.94 x 226.04 mm</li>
+                                    <li>Peso neto: 7.5 kg</li>
+                                  </ul>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+>>>>>>> BEM
                                 </div>
                               </div>
                             </div>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+<<<<<<< HEAD
               <div>
                   <div class="ofertas__image">
                       <img src="./assets/img/ofertas/alienware_aw2521.png" alt="monitor alienware" width="100" height="100">
@@ -248,14 +306,46 @@
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                   </div>
+=======
+            <div class="ofertas__producto2">
+                <div class="ofertas__image">
+                    <img src="./assets/img/ofertas/alienware_aw2521.png" alt="monitor alienware" width="100" height="100">
+                </div>
+                <div class="ofertas__content"> 
+                    <ul>
+                        <li>Alienware AW2521</li>
+                        <li class="price">$40000</li>
+                        <li>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Ver más
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  "completarjghjytj"
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+>>>>>>> BEM
                                 </div>
                               </div>
                             </div>
-                          </li>
-                      </ul>
-                  </div>  
-              </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
 
+<<<<<<< HEAD
               <div>
                   <div class="ofertas__image">
                       <img src="./assets/img/ofertas/rog_xg279q.png" alt="monitor asus rog" width="100" height="100">
@@ -326,14 +416,89 @@
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                   </div>
+=======
+            <div class="ofertas__producto3">
+                <div class="ofertas__image">
+                    <img src="./assets/img/ofertas/rog_xg279q.png" alt="monitor asus rog" width="100" height="100">
+                </div>
+                <div class="ofertas__content">
+                    <ul>
+                        <li>Asus ROG XG279Q</li>
+                        <li class="price">$42000</li>
+                        <li>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Ver más
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  "completar"
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 </div>
                               </div>
                             </div>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
+        <div>
+            <h4>Procesadores</h4>
+        </div>
+        <div class="ofertas__container">
+
+            <div class="ofertas__producto4">
+                <div class="ofertas__image">
+                    <img src="./assets/img/ofertas/ryzen9.jpg" alt="procesador ryzen 9" width="160" height="100">
+                </div>
+                <div class="ofertas__content">
+                    <ul>
+                        <li>Ryzen 9 5950x</li>
+                        <li class="price">$70000</li>
+                        <li>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Ver más
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  "completar"
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+>>>>>>> BEM
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+<<<<<<< HEAD
               <div>
                   <div class="ofertas__image">
                       <img src="./assets/img/ofertas/ryzen5.png" alt="procesador ryzen 3" width="160" height="100">
@@ -363,14 +528,46 @@
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                   </div>
+=======
+            <div class="ofertas__producto5">
+                <div class="ofertas__image">
+                    <img src="./assets/img/ofertas/ryzen5.png" alt="procesador ryzen 5" width="160" height="100">
+                </div>
+                <div class="ofertas__content"> 
+                    <ul>
+                        <li>Ryzen 5 3600</li>
+                        <li class="price">$20000</li>
+                        <li>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Ver más
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  "completar"
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+>>>>>>> BEM
                                 </div>
                               </div>
                             </div>
-                          </li>
-                      </ul>
-                  </div>  
-              </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
 
+<<<<<<< HEAD
               <div>
                   <div class="ofertas__image">
                       <img src="./assets/img/micros/i5-11th.png" alt="procesador Intel" width="100" height="100">
@@ -400,16 +597,53 @@
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                   </div>
+=======
+            <div class="ofertas__producto6">
+                <div class="ofertas__image">
+                    <img src="./assets/img/micros/i5-11th.png" alt="procesador Intel" width="100" height="100">
+                </div>
+                
+                <div class="ofertas__content">
+                    <ul>
+                        <li>Intel i5 11gen</li>
+                        <li class="price">$40000</li>
+                        <li>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Ver más
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  "completar"
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+>>>>>>> BEM
                                 </div>
                               </div>
                             </div>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-       
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div>
+            <h4>Micrófonos</h4>
+        </div>
+        <div class="ofertas__container">
 
+<<<<<<< HEAD
           <div>
               <h4>Micrófonos</h4>
           </div>
@@ -443,14 +677,46 @@
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                   </div>
+=======
+            <div class="ofertas__producto7">
+                <div class="ofertas__image">
+                    <img src="./assets/img/ofertas/shure_sm58.png" alt="micrófono shure sm58" width="60" height="100">
+                </div>
+                <div class="ofertas__content">
+                    <ul>
+                        <li>Shure SM58</li>
+                        <li class="price">$15000</li>
+                        <li>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Ver más
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  "completar"
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+>>>>>>> BEM
                                 </div>
                               </div>
                             </div>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+<<<<<<< HEAD
               <div>
                   <div class="ofertas__image">
                       <img src="./assets/img/ofertas/shure_mv7.jpg" alt="micrófono shure mv7" width="120" height="120">
@@ -480,14 +746,46 @@
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                   </div>
+=======
+            <div class="ofertas__producto8">
+                <div class="ofertas__image">
+                    <img src="./assets/img/ofertas/shure_mv7.jpg" alt="micrófono shure mv7" width="120" height="120">
+                </div>
+                <div class="ofertas__content"> 
+                    <ul>
+                        <li>Shure MV7</li>
+                        <li class="price">$20000</li>
+                        <li>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Ver más
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  "completar"
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+>>>>>>> BEM
                                 </div>
                               </div>
                             </div>
-                          </li>
-                      </ul>
-                  </div>  
-              </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
 
+<<<<<<< HEAD
               <div>
                   <div class="ofertas__image">
                       <img src="./assets/img/ofertas/blueSnowball.png" alt="micrófono blue snowball" width="100" height="100">
@@ -517,56 +815,90 @@
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                   </div>
+=======
+            <div class="ofertas__producto9">
+                <div class="ofertas__image">
+                    <img src="./assets/img/ofertas/blueSnowball.png" alt="micrófono blue snowball" width="100" height="100">
+                </div>
+                <div class="ofertas__content">
+                    <ul>
+                        <li>Blue Snowball</li>
+                        <li class="price">$14000</li>
+                        <li>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Ver más
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  "completar"
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+>>>>>>> BEM
                                 </div>
                               </div>
                             </div>
-                          </li>
-                      </ul>
-                  </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
               </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section> 
+  </main>
+  <!-- Fin Main -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <section class="col-lg-12 col-xs-12 footer__info">
+          <a class="footer__info__links" href="">Quiénes somos</a>
+          <a class="footer__info__links" href="">Términos y condiciones</a>
+          <a class="footer__info__links" shref="">Garantía y devoluciones</a>       
+        </section>
+      </div>
+      <div class="row">
+        <section class="col-lg-6 col-xs-12 footer__redes">
+          <h3>Seguinos en</h3>
+          <div class="footer__logos--animated">
+              <a class="footer__logo__imagenes--margin" href="https://www.facebook.com.ar/hardbuy" target="blank"><img src="./assets/img/fb_logo.png" alt="logo facebook" width="50" height="50"></a>
+              <a class="footer__logo__imagenes--margin" href="https://www.instagram.com/hardbuy" target="blank"><img src="./assets/img/instagram_logo.png" alt="logo instagram" width="50" height="50"></a>
+              <a class="footer__logo__imagenes--margin" href="https://www.twitter.com/hardbuy" target="blank"><img src="./assets/img/twitter_logo.png" alt="logo twitter" width="50" height="50"></a>
+              <a class="footer__logo__imagenes--margin" href="https://www.youtube.com/hardbuy" target="blank"><img src="./assets/img/youtube_logo.png" alt="logo youtube" width="50" height="50"></a>
+          </div>
+        </section>
+
+        <section class="col-lg-6 col-xs-12 footer__contacto">
+          <div>
+            <h3>Contacto</h3>
+          </div>
+          <div class="footer__logos--animated">
+            <a href="https://api.whatsapp.com/send?phone=+5491111111111" target="blank"><img src="./assets/img/wp_logo.png" alt="logo whatsapp" width="50" height="50"></a>
           </div>
         </section>
       </div>
     </div>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <section class="col-lg-12 col-xs-12 footer__info">
-            <a href="">Quénes somos</a>
-            <a href="">Términos y condiciones</a>
-            <a href="">Garantía y devoluciones</a>       
-          </section>
-        </div>
-        <div class="row">
-          <section class="col-lg-6 col-xs-12 footer__redes">
-            <h3>Seguinos en</h3>
-            <div class="footer__logos--animated">
-                <a href="https://www.facebook.com.ar/hardbuy" target="blank"><img src="./assets/img/fb_logo.png" alt="logo facebook" width="50" height="50"></a>
-                <a href="https://www.instagram.com/hardbuy" target="blank"><img src="./assets/img/instagram_logo.png" alt="logo instagram" width="50" height="50"></a>
-                <a href="https://www.twitter.com/hardbuy" target="blank"><img src="./assets/img/twitter_logo.png" alt="logo twitter" width="50" height="50"></a>
-                <a href="https://www.youtube.com/hardbuy" target="blank"><img src="./assets/img/youtube_logo.png" alt="logo youtube" width="50" height="50"></a>
-            </div>
-          </section>
-
-          <section class="col-lg-6 col-xs-12 footer__contacto">
-            <div>
-              <h3>Contacto</h3>
-            </div>
-            <div class="footer__logos--animated">
-              <a href="https://api.whatsapp.com/send?phone=+5491111111111" target="blank"><img src="./assets/img/wp_logo.png" alt="logo whatsapp" width="50" height="50"></a>
-            </div>
-          </section>
-        </div>
-      </div>
-    </footer>
+  </footer>
 
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-    
-  </body>
+</body>
+<!-- Fin body -->
 </html>
