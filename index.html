@@ -18,16 +18,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>HardBuy | Inicio</title>   
   </head>
 
-
 <body>
+  <header class="container-fluid nav nav__background--color">
+    <div class="row"> 
+      <div class="offset-lg-2 col-lg-8 col-xs-12">
+        <nav class="navbar navbar-expand-lg navbar-light">
+           <ul class="navbar-nav mr-auto">
+             <li>
+               <a href="./index.html"><img src="./assets/img/logo.png" alt="" width="250px" height="60px"></a>
+             </li>
+          </ul>
+
+          <div class="nav__search">
+            <form class="form-inline my-2 my-lg-0 nav__form nav__search__form">
+              <input class="form-control mr-sm-2 nav__form__search--width" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              <i class="fa fa-search nav__seach__icon"></i>
+            </button> 
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto nav__listas">
+              <li class="nav-item active nav__links">
+                <a class="nav-link" href="./views/products.html">Productos<span class="sr-only">(current)</span></a>
+              </li>
+              
+              <li class="nav-item dropdown menu nav__links">
+                <a class="nav-link dropdown-toggle" href="./views/error404.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Arma tu PC
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./views/error404.html">AMD</a>
+                  <a class="dropdown-item" href="./views/error404.html">Intel</a>
+                </div>
+              </li>
+  
+              <li class="nav-item nav__links">
+                <a class="nav-link" href="./views/account.html">Mi Cuenta</a>
+              </li>
+  
+              <li class="nav-item nav__links">
+                <a class="nav-link" href="./views/help.html">Ayuda</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+
+
   <!-- Nav --> 
-  <header class="container-fluid nav">
+  <!-- <header class="container-fluid nav">
     <div class="row nav__background--color">
       <div class="col-lg-12 col-xs-12">
         <nav class="navbar navbar-expand-lg navbar-light bg-light nav__background--color">
@@ -68,14 +135,25 @@
           </div>
           <div>
             <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+              <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
             </form>
           </div>
         </nav>
       </div>
     </div>
-  </header>
+  </header> -->
+
+  <!-- RGB Bar -->
+  <section id="rgbar" class="outer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-xs-12">
+
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Slider -->
   <main>
@@ -83,7 +161,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 col-xs-12 slider--padding"> 
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -113,54 +191,133 @@
         </div>
       </div>
     </section>
-     
+    
     <!-- Información -->
     <section class="main__info">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-xs-12">
-              <div class="main__info--img">
-                  <img src="./assets/img/envios.png" alt="envíos" width="40" height="40">
-                  <img src="./assets/img/maps.png" alt="mapa" width="40" height="40">
-                  <img src="./assets/img/ahora12_18.png" alt="ahora 12 y 18" width="100" height="40" id="imgSize">
-              </div>
-              <div class="main__info--txt">
-                  <div>
-                      <p>Envíos a</p>
-                      <p>todo el pais</p>
-                  </div>
-                  <div>
-                      <p>Retiro en</p>
-                      <p>sucursal</p>
-                  </div>
-                  <div>
-                      <p>Ahora 12 y 18</p></div>
-              </div>
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-lg-4 col-xs-12 main__info__flex">
+            <div class="img-column col-lg-2 main__info__img">
+              <img src="./assets/img/envios.png" alt="" height="60px" width="60px">
+            </div>
+            <div class="col-lg-8">
+              <div class="main__info__title">Envios a todo el país</div>
+              <div class="main__info__description">Despachamos en el día!</div>
+            </div>
           </div>
+
+          <div class="col-lg-4 col-xs-12  main__info__flex2">
+            <div class="img-column col-lg-2 main__info__img">
+              <img src="./assets/img/maps.png" alt="" height="60px" width="60px">
+            </div>
+            <div class="col-lg-8">
+              <div class="main__info__title">Retirá en nuestra sucursal!</div>
+              <div class="main__info__description">¿Dónde estamos?</div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-xs-12  main__info__flex3">
+            <div class="img-column col-lg-4 main__info__img">
+              <img src="./assets/img/ahora12_18.png" alt="" height="60px" width="160px">
+            </div>
+            <div class="col-lg-8">
+              <div class="main__info__title">Comprá con ahora 12 y 18</div>
+              <div class="main__info__description">Disponible sobre el precio de lista</div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
 
     <!-- Marcas -->
-    <section class="brands">
-      <div class="container">
-        <div class="row" >
-          <div class="col-lg-12 col-xs-12">  
-              <h3 class="subtitle">¡Las mejores marcas están aquí!</h3>
-              <div class="brands__images">
-                  <img src="./assets/img/brands/aorus_logo.png" alt="logo aorus" height="50" width="120">
-                  <img src="./assets/img/brands/corsair_logo.png" alt="logo corsair" height="50" width="120">
-                  <img src="./assets/img/brands/gigabyte_logo.png" alt="logo gigabyte" height="50" width="120">
-                  <img id="optional" src="./assets/img/brands/msi_logo.png" alt="logo msi" height="50" width="120">
-                  <img id="optional" src="./assets/img/brands/razer_logo.png" alt="logo razer" height="50" width="120">
-                  <img id="optional" src="./assets/img/brands/rog_logo.png" alt="logo rog" height="70" width="120">
+    <div class="container">
+      <h3 class="subtitle">¡Las mejores marcas están aquí!</h3>
+      <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row brands__card--justify brands__card--text">
+              <div class="card card--radius card--width card--padding">
+                <img src="./assets/img/brands/aorus_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Aorus</p>
+                </div>
               </div>
+
+              <div class="card card--radius card--width card--padding">
+                <img src="./assets/img/brands/corsair_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Corsair</p>
+                </div>
+              </div>
+
+              <div class="card card--radius card--width card--padding">
+                <img src="./assets/img/brands/msi_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="...">
+                <div class="card-body">
+                  <p class="card-text">MSI</p>
+                </div>
+              </div>
+
+              
+              <div class="card card--radius card--width card--padding">
+                <img src="./assets/img/brands/asus_rog_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Republic of Gamers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="row brands__card--justify brands__card--text">            
+              <div class="card card--radius card--width card--padding">
+                <img src="./assets/img/brands/amd_logo_back.png" class="card-img-top img-fluid brand__img--border" alt="...">
+                <div class="card-body">
+                  <p class="card-text">AMD</p>
+                </div>
+              </div>
+              
+              <div class="card card--radius card--width card--padding">
+                <img src="./assets/img/brands/Intel_logo_back.png" class="card-img-top img-fluid brand__img--border" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Intel</p>
+                </div>
+              </div>
+
+              
+              <div class="card card--radius card--width card--padding">
+                <img src="./assets/img/brands/razer_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Razer</p>
+                </div>
+              </div>
+
+              
+              <div class="card card--radius card--width card--padding">
+                <img src="./assets/img/brands/noctua_logo_back.png" class="card-img-top img-fluid brand__img--border" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Noctua</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
+        <a class="carousel-control-prev brand__controlPrev--flex" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon carousel-control-prev-icon--color" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next brand__controlNext--flex" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon  carousel-control-prev-icon--color" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+   
 
     <!-- Ofertas productos -->
     <section class="ofertas">
@@ -576,6 +733,8 @@
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 </body>
 <!-- Fin body -->

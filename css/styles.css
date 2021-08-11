@@ -232,7 +232,7 @@ footer h3 {
   display: flex;
   justify-content: center; }
 
-.justifyAlign--spaceEvenly, .preguntas__help .ayudaContacto div, .contacto__help .ayudaContacto div, .main__info .main__info--img, .main__info .main__info--txt, .brands__images {
+.justifyAlign--spaceEvenly, .preguntas__help .ayudaContacto div, .contacto__help .ayudaContacto div, .main__info .main__info--txt, .brands__images {
   display: flex;
   justify-content: space-evenly; }
 
@@ -246,14 +246,14 @@ a:hover {
   width: 100%;
   justify-content: space-around;
   align-items: center; }
-  .nav__listas .nav__links {
-    text-decoration: none;
-    font-weight: normal;
-    color: #424143 !important; }
-    .nav__listas .nav__links .nav__links__h1 {
-      color: green !important;
-      text-align: center;
-      font-family: 'Anton', sans-serif; }
+
+.nav__links {
+  text-decoration: none;
+  font-weight: normal;
+  color: #424143 !important; }
+  .nav__links .nav__links__h1 {
+    color: green !important;
+    font-family: 'Anton', sans-serif; }
 
 .ofertas p, .ofertas h4 {
   font-family: 'Montserrat', sans-serif;
@@ -356,14 +356,19 @@ a:hover {
     transform: translateY(-8px);
     transition: all 0.3s; }
 
-.main__info .main__info--txt {
-  padding-right: 40px;
-  text-align: center;
-  font-size: 13px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 100; }
-  .main__info .main__info--txt p {
-    margin: 0px; }
+.main__info {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .main__info .main__info__img {
+    text-align: center; }
+  .main__info .main__info--txt {
+    padding-right: 40px;
+    text-align: center;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100; }
+    .main__info .main__info--txt p {
+      margin: 0px; }
 
 .slider--padding {
   padding: 0px !important; }
@@ -379,3 +384,100 @@ a:hover {
   border-bottom: solid 1px black;
   justify-content: center;
   text-align: center; }
+
+#rgbar {
+  background: linear-gradient(45deg, red 0%, magenta 18%, blue 30%, #00f0ff 45%, yellow 80%, #ff7800 90%, red 100%);
+  background-size: 400% 400%;
+  height: 3px;
+  animation: rgbBg 20s linear infinite; }
+
+@keyframes rgbBg {
+  0% {
+    background-position: 400% 0%; }
+  100% {
+    background-position: 0% 400%; } }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none; }
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 65px;
+  color: #424143;
+  position: absolute;
+  left: 5px;
+  bottom: -13px; }
+  .carousel-control-next-icon:after:hover {
+    background: green; }
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 65px;
+  color: #424143;
+  position: absolute;
+  left: 5px;
+  bottom: -13px; }
+  .carousel-control-prev-icon:after:hover {
+    color: green; }
+
+.card--width {
+  width: 15rem; }
+
+.brands__card--justify {
+  justify-content: space-evenly;
+  margin-top: 40px; }
+
+.brands__card--text {
+  text-align: center;
+  font-size: 20px; }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  position: relative; }
+
+.card--radius {
+  border-radius: 1.25rem; }
+
+.brand__img--border {
+  border-top-left-radius: 1.25rem !important;
+  border-top-right-radius: 1.25rem !important; }
+
+.brand__controlPrev--flex {
+  justify-content: flex-start; }
+
+.brand__controlNext--flex {
+  justify-content: flex-end; }
+
+.main__info__flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.main__info__flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main__info__flex3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.main__info__title {
+  font-size: .9vw;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #90c512; }
+
+.main__info__description {
+  font-size: .75vw; }
