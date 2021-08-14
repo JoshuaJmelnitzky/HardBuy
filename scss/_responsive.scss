@@ -35,6 +35,34 @@ img#optional{
     display: none;
 }
 
+
+.navbar-collapse {
+    position: absolute;
+    top: 83px;
+    right: 0%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 142%;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.navbar-collapse.collapsing {
+    height: auto !important;
+    margin-left: 50%;
+    right: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar-collapse.show {
+    right: 0%;
+}
+
+.nav__order{
+    order: -1;
+}
+
 }
 
 
@@ -58,6 +86,11 @@ img#optional{
 #imgSize{
     width: 160px;
 }
+
+.nav__collapseButton{
+    display: none;
+}
+
 
 }
 

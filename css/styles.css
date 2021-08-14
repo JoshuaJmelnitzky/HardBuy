@@ -19,7 +19,26 @@
   .containers div, .containers {
     padding-bottom: 10px; }
   img#optional {
-    display: none; } }
+    display: none; }
+  .navbar-collapse {
+    position: absolute;
+    top: 83px;
+    right: 0%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 142%;
+    transition: all 0.3s ease;
+    display: block; }
+  .navbar-collapse.collapsing {
+    height: auto !important;
+    margin-left: 50%;
+    right: 100%;
+    transition: all 0.3s ease; }
+  .navbar-collapse.show {
+    right: 0%; }
+  .nav__order {
+    order: -1; } }
 
 @media only screen and (min-width: 767px) {
   header p {
@@ -33,17 +52,20 @@
     position: relative;
     right: 30px; }
   #imgSize {
-    width: 160px; } }
+    width: 160px; }
+  .nav__collapseButton {
+    display: none; } }
 
-.nav__background--color {
-  background-color: #B7EFC5 !important; }
+@media only screen and (min-width: 767px) {
+  .nav__background--color {
+    background-color: #e7e7e7 !important; } }
 
 .price {
   color: blue;
   font-style: italic; }
 
 .nav__listas .nav__links {
-  font-size: 25px; }
+  font-size: 18px; }
   .nav__listas .nav__links .nav__links__h1 {
     font-size: 50px; }
 
@@ -246,14 +268,20 @@ a:hover {
   width: 100%;
   justify-content: space-around;
   align-items: center; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .nav__listas {
+      width: 60vw;
+      background: rgba(255, 255, 255, 0.5); } }
 
-.nav__links {
-  text-decoration: none;
-  font-weight: normal;
-  color: #424143 !important; }
-  .nav__links .nav__links__h1 {
-    color: green !important;
-    font-family: 'Anton', sans-serif; }
+.nav__links a {
+  color: #37373f !important;
+  font-weight: 300; }
+  .nav__links a:hover {
+    font-weight: bold; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .nav__links a {
+      font-size: 20px;
+      font-weight: bold; } }
 
 .ofertas p, .ofertas h4 {
   font-family: 'Montserrat', sans-serif;
@@ -305,7 +333,7 @@ a:hover {
   align-items: center;
   font-style: italic;
   font-family: Helvetica;
-  background-color: #B7EFC5;
+  background-color: #B7E4C7;
   height: 102px; }
 
 .footer__info__links {
@@ -481,3 +509,30 @@ a:hover {
 
 .main__info__description {
   font-size: .75vw; }
+
+.fixed-top {
+  position: relative; }
+
+.col-lg-12, .col-xs-12 {
+  padding: 0px; }
+
+.nav--height {
+  height: 80px; }
+
+.nav--flex {
+  display: flex;
+  align-items: center; }
+
+.nav--padding {
+  padding-left: 40px; }
+
+.nav__logo {
+  width: 17vw;
+  height: 2vw; }
+  @media only screen and (max-width: 767px) {
+    .nav__logo {
+      width: 40vw;
+      height: 10vw; } }
+
+.navbar {
+  width: 100%; }

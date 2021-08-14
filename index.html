@@ -28,7 +28,7 @@
   </head>
 
 <body>
-  <header class="container-fluid nav nav__background--color">
+<!--   <header class="container-fluid nav nav__background--color">
     <div class="row"> 
       <div class="offset-lg-2 col-lg-8 col-xs-12">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -52,7 +52,7 @@
 
     <div class="row">
       <div class="col-lg-12 col-xs-12">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light ">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -80,69 +80,48 @@
                 <a class="nav-link" href="./views/help.html">Ayuda</a>
               </li>
             </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-
-  </header>
-
-
-
-
-
-
-
-  <!-- Nav --> 
-  <!-- <header class="container-fluid nav">
-    <div class="row nav__background--color">
-      <div class="col-lg-12 col-xs-12">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light nav__background--color">
-          <p>Hardbuy</p>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto nav__listas">
-              <li class="nav-item active nav__links">
-                <a class="nav-link" href="./views/products.html">Productos<span class="sr-only">(current)</span></a>
-              </li>
-              
-              <li class="nav-item dropdown menu nav__links">
-                <a class="nav-link dropdown-toggle" href="./views/error404.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Arma tu PC
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./views/error404.html">AMD</a>
-                  <a class="dropdown-item" href="./views/error404.html">Intel</a>
-                </div>
-              </li>
-
-              <li class="nav-item nav__links">
-                <h1>
-                  <a class="nav-link nav__links__h1" href="./index.html">HardBuy</a>
-                </h1>
-              </li>
-  
-              <li class="nav-item nav__links">
-                <a class="nav-link" href="./views/account.html">Mi Cuenta</a>
-              </li>
-  
-              <li class="nav-item nav__links">
-                <a class="nav-link" href="./views/help.html">Ayuda</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-            </form>
           </div>
         </nav>
       </div>
     </div>
   </header> -->
+
+
+  <header>
+    <div class="container-fluid">
+      <div class="row nav__background--color bg-dark">
+        <div class="col-lg-12 col-9 bg-dark nav--height nav--flex nav--padding">
+          <a href="./index.html"><img src="./assets/img/logo.png" alt="hardbuy_logo" class="nav__logo" ></a>     
+        </div>
+
+        <div class="offset-lg-2 col-lg-8 col-3 nav__order nav--flex">
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <button class="navbar-toggler nav__collapseButton" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto nav__listas">
+                <li class="nav-item active nav__links">
+                  <a class="nav-link" href="./views/products.html">Productos</a>
+                </li>
+                <li class="nav-item nav__links">
+                  <a class="nav-link" href="./views/buildpc.html">Arma tu PC</a>
+                </li>
+                <li class="nav-item nav__links">
+                  <a class="nav-link" href="./views/account.html">Mi Cuenta</a>
+                </li>
+                <li class="nav-item nav__links">
+                  <a class="nav-link" href="./views/help.html">Ayuda</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
 
   <!-- RGB Bar -->
   <section id="rgbar" class="outer">
@@ -191,6 +170,8 @@
         </div>
       </div>
     </section>
+
+    
     
     <!-- Información -->
     <section class="main__info">
@@ -260,7 +241,7 @@
               </div>
 
               
-              <div class="card card--radius card--width card--padding">
+              <div class="card card--radius card--width card--padding col-xs-2">
                 <img src="./assets/img/brands/asus_rog_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="...">
                 <div class="card-body">
                   <p class="card-text">Republic of Gamers</p>
@@ -315,9 +296,6 @@
         </a>
       </div>
     </div>
-
-
-   
 
     <!-- Ofertas productos -->
     <section class="ofertas">

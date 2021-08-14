@@ -34,19 +34,25 @@ a:hover{
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    @media only screen and (min-width:0px) and (max-width:767px){
+        width: 60vw;
+        background: rgba(255,255,255,0.5);
+    }
 }
 
 .nav__links{
-        text-decoration: none;
-        font-weight: normal;
-        color: $linksColor !important;
-        .nav__links__h1{
-            color: green !important;
-            font-family: 'Anton', sans-serif;
+        a{
+            color: #37373f !important;
+            font-weight: 300;
+            &:hover{
+                font-weight: bold;
+            }
+            @media only screen and (min-width:0px) and (max-width:767px){
+               font-size: 20px;
+               font-weight: bold;
+            }
         }
 }
-
-
 
 
 .ofertas{
@@ -352,4 +358,38 @@ a:hover{
 
 .main__info__description{
     font-size: .75vw;
+}
+
+.fixed-top{
+    position: relative;
+}
+
+.col-lg-12, .col-xs-12{
+    padding: 0px;
+}
+
+.nav--height{
+    height: 80px;
+}
+
+.nav--flex{
+    display: flex;
+    align-items: center;
+}
+
+.nav--padding{
+    padding-left: 40px;
+}
+
+.nav__logo{
+    width: 17vw;
+    height: 2vw;
+    @media only screen and (max-width:767px){
+        width: 40vw;
+        height: 10vw;
+    }
+}
+
+.navbar{
+    width: 100%;
 }
