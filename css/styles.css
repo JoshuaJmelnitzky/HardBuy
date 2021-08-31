@@ -235,6 +235,12 @@ footer h3 {
 .filtros__width {
   width: 75px; }
 
+.productos__flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
 .error {
   height: 800px;
   display: flex;
