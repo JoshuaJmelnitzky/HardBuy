@@ -18,94 +18,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
-     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>HardBuy | Inicio</title>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" crossorigin="anonymous"/>
+    <title>HardBuy</title>   
   </head>
 
 <body>
-<!--   <header class="container-fluid nav nav__background--color">
-    <div class="row"> 
-      <div class="offset-lg-2 col-lg-8 col-xs-12">
-        <nav class="navbar navbar-expand-lg navbar-light">
-           <ul class="navbar-nav mr-auto">
-             <li>
-               <a href="./index.html"><img src="./assets/img/logo.png" alt="" width="250px" height="60px"></a>
-             </li>
-          </ul>
 
-          <div class="nav__search">
-            <form class="form-inline my-2 my-lg-0 nav__form nav__search__form">
-              <input class="form-control mr-sm-2 nav__form__search--width" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              <i class="fa fa-search nav__seach__icon"></i>
-            </button> 
-            </form>
-          </div>
-        </nav>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-12 col-xs-12">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto nav__listas">
-              <li class="nav-item active nav__links">
-                <a class="nav-link" href="./views/products.html">Productos<span class="sr-only">(current)</span></a>
-              </li>
-              
-              <li class="nav-item dropdown menu nav__links">
-                <a class="nav-link dropdown-toggle" href="./views/error404.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Arma tu PC
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./views/error404.html">AMD</a>
-                  <a class="dropdown-item" href="./views/error404.html">Intel</a>
-                </div>
-              </li>
-  
-              <li class="nav-item nav__links">
-                <a class="nav-link" href="./views/account.html">Mi Cuenta</a>
-              </li>
-  
-              <li class="nav-item nav__links">
-                <a class="nav-link" href="./views/help.html">Ayuda</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header> -->
-
-
+  <!-- Inicio Header -->
   <header>
     <div class="container-fluid">
       <div class="row nav__background--color bg-dark">
-        <div class="col-lg-12 col-9 bg-dark nav--height nav--flex nav--padding">
-          <a href="./index.html"><img src="./assets/img/logo.png" alt="hardbuy_logo" class="nav__logo" ></a>     
+        <div class="col-lg-12 col-9 col-md-12 bg-dark nav--height nav--flex nav--padding">
+          <div class="col-lg-8 col-8">
+            <a href="./index.html"><img src="./assets/img/logo.png" alt="hardbuy_logo" class="nav__logo" ></a> 
+          </div>
+          <div class="search-container search-container__mobile--width search-container__mobile--position">
+            <input type="checkbox" id="checkbox2">
+            <input type="text" name="search" placeholder="Buscar" class="search-input">
+            <a href="#" class="search-btn search-btn__position">
+              <i class="fas fa-search"></i>      
+            </a>
+            <form class="search-container-mobile" action="">
+              <input type="text" class="search" autocomplete="off" placeholder="Buscar...">
+            </form>
+          </div>
         </div>
 
-        <div class="offset-lg-2 col-lg-8 col-3 nav__order nav--flex">
-          <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="offset-lg-2 offset-md-2 col-lg-8 col-md-8 col-3 nav__order nav--flex">
+          <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark fixed-top">
             <button class="navbar-toggler nav__collapseButton" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <div class="menu">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="menu__lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav mr-auto nav__listas">
                 <li class="nav-item active nav__links">
                   <a class="nav-link" href="./views/products.html">Productos</a>
                 </li>
-                <li class="nav-item nav__links">
-                  <a class="nav-link" href="./views/buildpc.html">Arma tu PC</a>
+                <li class="nav-item dropdown menu  nav__links">
+                  <a class="nav-link dropdown-toggle" href="./views/buildpc.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Arma tu PC</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./views/error404.html">AMD</a>
+                    <a class="dropdown-item" href="./views/error404.html">Intel</a>
+                  </div>
                 </li>
                 <li class="nav-item nav__links">
                   <a class="nav-link" href="./views/account.html">Mi Cuenta</a>
@@ -121,22 +89,20 @@
     </div>
   </header>
 
+  <main>
+    <!-- RGB Bar -->
+    <section id="rgbar" class="outer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-xs-12">
 
-
-  <!-- RGB Bar -->
-  <section id="rgbar" class="outer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 col-xs-12">
-
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Slider -->
-  <main>
-    <section class="slider">
+    <!-- Slider -->
+    <section class="slider slider--margin">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 col-xs-12 slider--padding"> 
@@ -171,506 +137,598 @@
       </div>
     </section>
 
-    
-    
-    <!-- Información -->
-    <section class="main__info">
-      <div class="container-fluid">
-        <div class="row ">
-          <div class="col-lg-4 col-xs-12 main__info__flex">
-            <div class="img-column col-lg-2 main__info__img">
-              <img src="./assets/img/envios.png" alt="" height="60px" width="60px">
-            </div>
-            <div class="col-lg-8">
-              <div class="main__info__title">Envios a todo el país</div>
-              <div class="main__info__description">Despachamos en el día!</div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-xs-12  main__info__flex2">
-            <div class="img-column col-lg-2 main__info__img">
-              <img src="./assets/img/maps.png" alt="" height="60px" width="60px">
-            </div>
-            <div class="col-lg-8">
-              <div class="main__info__title">Retirá en nuestra sucursal!</div>
-              <div class="main__info__description">¿Dónde estamos?</div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-xs-12  main__info__flex3">
-            <div class="img-column col-lg-4 main__info__img">
-              <img src="./assets/img/ahora12_18.png" alt="" height="60px" width="160px">
-            </div>
-            <div class="col-lg-8">
-              <div class="main__info__title">Comprá con ahora 12 y 18</div>
-              <div class="main__info__description">Disponible sobre el precio de lista</div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
     <!-- Marcas -->
     <div class="container">
-      <h3 class="subtitle">¡Las mejores marcas están aquí!</h3>
-      <div id="carouselExampleControls" class="carousel slide" data-interval="false">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row brands__card--justify brands__card--text">
-              <div class="card card--radius card--width card--padding">
-                <img src="./assets/img/brands/aorus_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Aorus</p>
-                </div>
-              </div>
-
-              <div class="card card--radius card--width card--padding">
-                <img src="./assets/img/brands/corsair_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Corsair</p>
-                </div>
-              </div>
-
-              <div class="card card--radius card--width card--padding">
-                <img src="./assets/img/brands/msi_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="...">
-                <div class="card-body">
-                  <p class="card-text">MSI</p>
-                </div>
-              </div>
-
-              
-              <div class="card card--radius card--width card--padding col-xs-2">
-                <img src="./assets/img/brands/asus_rog_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Republic of Gamers</p>
-                </div>
-              </div>
+      <div class="row">
+        <h3 class="subtitle subtitle--width">¡Las mejores marcas están aquí!</h3>
+        <div id="slider-marcas" class="owl-carousel slider__marcas--center">
+          <!-- Marca #1 -->
+          <div class="card card--radius card--width card--padding">
+            <img src="./assets/img/brands/aorus_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="logo marca aorus">
+            <div class="card-body">
+              <p class="card-text">Aorus</p>
             </div>
           </div>
 
-
-          <div class="carousel-item">
-            <div class="row brands__card--justify brands__card--text">            
-              <div class="card card--radius card--width card--padding">
-                <img src="./assets/img/brands/amd_logo_back.png" class="card-img-top img-fluid brand__img--border" alt="...">
-                <div class="card-body">
-                  <p class="card-text">AMD</p>
-                </div>
-              </div>
-              
-              <div class="card card--radius card--width card--padding">
-                <img src="./assets/img/brands/Intel_logo_back.png" class="card-img-top img-fluid brand__img--border" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Intel</p>
-                </div>
-              </div>
-
-              
-              <div class="card card--radius card--width card--padding">
-                <img src="./assets/img/brands/razer_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Razer</p>
-                </div>
-              </div>
-
-              
-              <div class="card card--radius card--width card--padding">
-                <img src="./assets/img/brands/noctua_logo_back.png" class="card-img-top img-fluid brand__img--border" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Noctua</p>
-                </div>
-              </div>
+           <!-- Marca #2 -->
+          <div class="card card--radius card--width card--padding">
+            <img src="./assets/img/brands/corsair_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="logo marca corsair">
+            <div class="card-body">
+              <p class="card-text">Corsair</p>
             </div>
           </div>
+
+           <!-- Marca #3 -->
+          <div class="card card--radius card--width card--padding">
+            <img src="./assets/img/brands/msi_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="logo marca msi">
+            <div class="card-body">
+              <p class="card-text">MSI</p>
+            </div>
+          </div>
+
+           <!-- Marca #4 -->
+          <div class="card card--radius card--width card--padding col-xs-2">
+            <img src="./assets/img/brands/asus_rog_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="logo marca republic of gamer">
+            <div class="card-body">
+              <p class="card-text">Republic of Gamers</p>
+            </div>
+          </div>
+
+           <!-- Marca #5 -->
+          <div class="card card--radius card--width card--padding">
+            <img src="./assets/img/brands/amd_logo_back.png" class="card-img-top img-fluid brand__img--border" alt="logo marca amd">
+            <div class="card-body">
+              <p class="card-text">AMD</p>
+            </div>
+          </div>
+          
+           <!-- Marca #6 -->
+          <div class="card card--radius card--width card--padding">
+            <img src="./assets/img/brands/Intel_logo_back.png" class="card-img-top img-fluid brand__img--border" alt="logo marca intel">
+            <div class="card-body">
+              <p class="card-text">Intel</p>
+            </div>
+          </div>
+
+           <!-- Marca #7 -->
+          <div class="card card--radius card--width card--padding">
+            <img src="./assets/img/brands/razer_logo_back.jpg" class="card-img-top img-fluid brand__img--border" alt="logo marca razer">
+            <div class="card-body">
+              <p class="card-text">Razer</p>
+            </div>
+          </div>
+
+           <!-- Marca #8 -->
+          <div class="card card--radius card--width card--padding">
+            <img src="./assets/img/brands/noctua_logo_back.png" class="card-img-top img-fluid brand__img--border" alt="logo marca noctua">
+            <div class="card-body">
+              <p class="card-text">Noctua</p>
+            </div>
+          </div>
+          
         </div>
-
-        <a class="carousel-control-prev brand__controlPrev--flex" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon carousel-control-prev-icon--color" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next brand__controlNext--flex" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon  carousel-control-prev-icon--color" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
 
     <!-- Ofertas productos -->
-    <section class="ofertas">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-xs-12">
-            <h3 class="subtitle ofertas__subtitle--width">Ofertas destacadas</h3>
-            <div>   
-                <h4>Monitores</h4>
+    <div class="container ofertass">
+      <!-- Inicio ofertas de monitores -->
+      <div class="row">
+        <h3 class="subtitle subtitle--width">Ofertas destacadas</h3>
+        <h4>Monitores gaming con alta tasa de refresco para que puedas ver cada detalle</h4>
+        <div id="slider-monitor" class="owl-carousel slider--background slider--margin">
+          <!-- Monitor #1 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/monitores/zowie_2546.webp" class="pic-1" alt="monitor zowie xl2546">
+                <img src="./assets/img/products/monitores/zowie_2546_2.png" class="pic-2" alt="posterior monitor zowie xl2546" >
+              </a>
+              <span class="discount">5% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
             </div>
-            <div class="ofertas__container">
-
-              <div class="ofertas__producto1">
-                <div class="ofertas__image">
-                    <img src="./assets/img/ofertas/zowie_2546.webp" alt="monitor zowie" width="100" height="100">
-                </div>
-                <div class="ofertas__content">
-                    <ul>
-                        <li>Zowie xl 2546</li>
-                        <li class="price">$35000</li>
-                        <li>
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Ver más
-                          </button>
-
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  <strong>Características</strong>
-                                  <ul>
-                                    <li>Tamaño: 24.5"</li>
-                                    <li>Relación aspecto: 16:9</li>
-                                    <li>Max. resolución: 1920 x 1080 at 240Hz (HDMI 2.0, DP)</li>
-                                    <li>Tipo de panel: TN</li>
-                                    <li>Tecnología DyAc</li>
-                                    <li>S Switch (Profiles to go)</li>
-                                  </ul>
-                                  <strong>Dimensiones y peso</strong>
-                                  <ul>
-                                    <li>Dimensiones (max. altura): 515.43 x 569.94 x 226.04 mm</li>
-                                    <li>Peso neto: 7.5 kg</li>
-                                  </ul>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                    </ul>
-                </div>
+            <div class="content">
+              <span class="category"><a href="">Benq</a></span>
+              <h3 class="title"><a href="">Zowie xl2546</a></h3>
+              <div class="price"><span>$125000</span>$118750</div>
             </div>
-
-            <div class="ofertas__producto2">
-                <div class="ofertas__image">
-                    <img src="./assets/img/ofertas/alienware_aw2521.png" alt="monitor alienware" width="100" height="100">
-                </div>
-                <div class="ofertas__content"> 
-                    <ul>
-                        <li>Alienware AW2521</li>
-                        <li class="price">$40000</li>
-                        <li>
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Ver más
-                          </button>
-
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  "completarjghjytj"
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                    </ul>
-                </div>  
-            </div>
-
-            <div class="ofertas__producto3">
-                <div class="ofertas__image">
-                    <img src="./assets/img/ofertas/rog_xg279q.png" alt="monitor asus rog" width="100" height="100">
-                </div>
-                <div class="ofertas__content">
-                    <ul>
-                        <li>Asus ROG XG279Q</li>
-                        <li class="price">$42000</li>
-                        <li>
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Ver más
-                          </button>
-
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  "completar"
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <h4>Procesadores</h4>
-        </div>
-        <div class="ofertas__container">
-
-            <div class="ofertas__producto4">
-                <div class="ofertas__image">
-                    <img src="./assets/img/ofertas/ryzen9.jpg" alt="procesador ryzen 9" width="160" height="100">
-                </div>
-                <div class="ofertas__content">
-                    <ul>
-                        <li>Ryzen 9 5950x</li>
-                        <li class="price">$70000</li>
-                        <li>
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Ver más
-                          </button>
-
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  "completar"
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="ofertas__producto5">
-                <div class="ofertas__image">
-                    <img src="./assets/img/ofertas/ryzen5.png" alt="procesador ryzen 5" width="160" height="100">
-                </div>
-                <div class="ofertas__content"> 
-                    <ul>
-                        <li>Ryzen 5 3600</li>
-                        <li class="price">$20000</li>
-                        <li>
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Ver más
-                          </button>
-
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  "completar"
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                    </ul>
-                </div>  
-            </div>
-
-            <div class="ofertas__producto6">
-                <div class="ofertas__image">
-                    <img src="./assets/img/micros/i5-11th.png" alt="procesador Intel" width="100" height="100">
-                </div>
-                
-                <div class="ofertas__content">
-                    <ul>
-                        <li>Intel i5 11gen</li>
-                        <li class="price">$40000</li>
-                        <li>
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Ver más
-                          </button>
-
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  "completar"
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    
-        <div>
-            <h4>Micrófonos</h4>
-        </div>
-        <div class="ofertas__container">
-
-            <div class="ofertas__producto7">
-                <div class="ofertas__image">
-                    <img src="./assets/img/ofertas/shure_sm58.png" alt="micrófono shure sm58" width="60" height="100">
-                </div>
-                <div class="ofertas__content">
-                    <ul>
-                        <li>Shure SM58</li>
-                        <li class="price">$15000</li>
-                        <li>
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Ver más
-                          </button>
-
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  "completar"
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="ofertas__producto8">
-                <div class="ofertas__image">
-                    <img src="./assets/img/ofertas/shure_mv7.jpg" alt="micrófono shure mv7" width="120" height="120">
-                </div>
-                <div class="ofertas__content"> 
-                    <ul>
-                        <li>Shure MV7</li>
-                        <li class="price">$20000</li>
-                        <li>
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Ver más
-                          </button>
-
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  "completar"
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                    </ul>
-                </div>  
-            </div>
-
-            <div class="ofertas__producto9">
-                <div class="ofertas__image">
-                    <img src="./assets/img/ofertas/blueSnowball.png" alt="micrófono blue snowball" width="100" height="100">
-                </div>
-                <div class="ofertas__content">
-                    <ul>
-                        <li>Blue Snowball</li>
-                        <li class="price">$14000</li>
-                        <li>
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Ver más
-                          </button>
-
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  "completar"
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                    </ul>
-                </div>
-              </div>
-            </div>      
           </div>
+
+          <!-- Monitor #2 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/monitores/alienware_aw2521.png" class="pic-1" alt="monitor alienware aw2521" >
+                <img src="./assets/img/products/monitores/alienware_aw2521_2.jpg" class="pic-2" alt="posterior monitor alienware aw2521" >
+              </a>
+              <span class="discount">10% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Dell</a></span>
+              <h3 class="title"><a href="">Alienware AW2521</a></h3>
+              <div class="price"><span>$205000</span>$184500</div>
+            </div>
+          </div>
+
+          <!-- Monitor #3 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/monitores/rog_xg279q.png" class="pic-1" alt="monitor rog xg279q" >
+                <img src="./assets/img/products/monitores/rog_xg279q_2.png" class="pic-2" alt="posterior monitor rog xg279q" >
+              </a>
+              <span class="discount">7% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Asus</a></span>
+              <h3 class="title"><a href="">ROG XG279Q</a></h3>
+              <div class="price"><span>$199999</span>$185999</div>
+            </div>
+          </div>
+
+          <!-- Monitor #4 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/monitores/aorus_kd25f.jpg" class="pic-1" alt="monitor aorus kd25f">
+                <img src="./assets/img/products/monitores/aorus_kd25f_2.jpg" class="pic-2" alt="posterior monitor aorus kd25f" >
+              </a>
+              <span class="discount">15% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Gigabyte</a></span>
+              <h3 class="title"><a href="">Aorus KD25F</a></h3>
+              <div class="price"><span>$145000</span>$123250</div>
+            </div>
+          </div>
+
+          <!-- Monitor #5 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/monitores/lg_32gn500.webp" class="pic-1" alt="monitor lg 32gn500">
+                <img src="./assets/img/products/monitores/lg_32gn500_2.webp" class="pic-2" alt="posterior monitor lg 32gn500">
+              </a>
+              <span class="discount">18% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">LG</a></span>
+              <h3 class="title"><a href="">32GN500</a></h3>
+              <div class="price"><span>$85000</span>$69700</div>
+            </div>
+          </div>
+
+          <!-- Monitor #6 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/monitores/redragon_ruby.jpg" class="pic-1" alt="monitor redragon rudy" >
+                <img src="./assets/img/products/monitores/redragon_ruby_2.jpg" class="pic-2" alt="posterior monitor redragon rudy" >
+              </a>
+              <span class="discount">15% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Redragon</a></span>
+              <h3 class="title"><a href="">Ruby</a></h3>
+              <div class="price"><span>$62500</span>$53125</div>
+            </div>
+          </div>
+
+          <!-- Monitor #7 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/monitores/samsung_c24rg50.webp" class="pic-1" alt="monitor samsung c24rg50">
+                <img src="./assets/img/products/monitores/samsung_c24rg50_2.webp" class="pic-2" alt="posterior monitor samsung c24rg50" >
+              </a>
+              <span class="discount">15% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Samsung</a></span>
+              <h3 class="title"><a href="">C24RG50</a></h3>
+              <div class="price"><span>$47000</span>$52200</div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section> 
+
+      <!-- Inicio oferta de procesadores -->
+      <div class="row">
+        <h4>Procesadores para las tareas más exigentes</h4>
+        <div id="slider-procesador" class="owl-carousel slider--background slider--margin">
+          <!-- Procesador #1 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/procesadores/i5_9400f.jpg" class="pic-1" alt="caja procesador i5 9400f">
+                <img src="./assets/img/products/procesadores/i5_9400f_2.jpg" class="pic-2" alt="procesador i5 9400f" >
+              </a>
+              <span class="discount">10% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Intel</a></span>
+              <h3 class="title"><a href="">i5 9400f</a></h3>
+              <div class="price"><span>$40000</span>$35999</div>
+            </div>
+          </div>
+
+          <!-- Procesador #2 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/procesadores/i7_10th.jpg" class="pic-1" alt="caja procesador i7 10700" >
+                <img src="./assets/img/products/procesadores/i7_10th_2.jpg" class="pic-2" alt="procesador i7 10700" >
+              </a>
+              <span class="discount">13% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Intel</a></span>
+              <h3 class="title"><a href="">i7 10700</a></h3>
+              <div class="price"><span>$54000</span>$46980</div>
+            </div>
+          </div>
+
+          <!-- Procesador #3 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/procesadores/i9_11th.jpg" class="pic-1" alt="caja procesador i9 11900" >
+                <img src="./assets/img/products/procesadores/i9_11th_2.jpg" class="pic-2" alt="procesador i9 11900" >
+              </a>
+              <span class="discount">8% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Intel</a></span>
+              <h3 class="title"><a href="">i9 11900</a></h3>
+              <div class="price"><span>$94999</span>$87399</div>
+            </div>
+          </div>
+
+          <!-- Procesador #4 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/procesadores/ryzen5_5600x.jpg" class="pic-1" alt="caja procesador ryzen 5 5600x">
+                <img src="./assets/img/products/procesadores/ryzen5_5600x_2.jpg" class="pic-2" alt="procesador ryzen 5 5600x" >
+              </a>
+              <span class="discount">15% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">AMD</a></span>
+              <h3 class="title"><a href="">Ryzen 5 5600x</a></h3>
+              <div class="price"><span>$44000</span>$37400</div>
+            </div>
+          </div>
+
+          <!-- Procesador #5 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/procesadores/ryzen7_5800x.jpg" class="pic-1" alt="caja procesador ryzen 7 5800x" >
+                <img src="./assets/img/products/procesadores/ryzen7_5800x_2.jpg" class="pic-2" alt="procesador ryzen 7 5800x" >
+              </a>
+              <span class="discount">8% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">AMD</a></span>
+              <h3 class="title"><a href="">Ryzen 7 5800x</a></h3>
+              <div class="price"><span>$59000</span>$54000</div>
+            </div>
+          </div>  
+
+          <!-- Procesador #6 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/procesadores/i9_9900k.jpg" class="pic-1" alt="caja procesador i9 9900k" >
+                <img src="./assets/img/products/procesadores/i9_9900k_2.jpg" class="pic-2" alt="procesador i9 9900k" >
+              </a>
+              <span class="discount">12% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Intel</a></span>
+              <h3 class="title"><a href="">i9 9900k</a></h3>
+              <div class="price"><span>$62000</span>$54560</div>
+            </div>
+          </div>
+
+          <!-- Procesador #7 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/procesadores/ryzen9_5950x.jpg" class="pic-1" alt="caja procesador ryzen 9 5950x">
+                <img src="./assets/img/products/procesadores/ryzen9_5950x_2.jpg" class="pic-2" alt="procesador ryzen 9 5950x" >
+              </a>
+              <span class="discount">15% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">AMD</a></span>
+              <h3 class="title"><a href="">Ryzen 9 5950x</a></h3>
+              <div class="price"><span>$120000</span>$110400</div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+
+      <!-- Inicio oferta de micrófonos -->
+      <div class="row">
+        <h4>Gabinetes con estética inigualable</h4>
+        <div id="slider-case" class="owl-carousel slider--background slider--margin">
+          <!-- Gabinete #1 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/gabinetes/azza_apollo-430.jpg" class="pic-1" alt="gabinete azza apollo 430">
+                <img src="./assets/img/products/gabinetes/azza_apollo-430_2.jpg" class="pic-2" alt="lateral gabinete azza apollo 430" >
+              </a>
+              <span class="discount">11% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">AZZA</a></span>
+              <h3 class="title"><a href="">Apollo 430</a></h3>
+              <div class="price"><span>$7500</span>$6699</div>
+            </div>
+          </div>
+
+          <!-- Gabinete #2 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/gabinetes/azza_pyramid.png" class="pic-1" alt="gabinete azza pyramid" >
+                <img src="./assets/img/products/gabinetes/azza_pyramid_2.png" class="pic-2" alt="lateral gabinete azza pyramid" >
+              </a>
+              <span class="discount">10% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">AZZA</a></span>
+              <h3 class="title"><a href="">Pyramid</a></h3>
+              <div class="price"><span>$59999</span>$53999</div>
+            </div>
+          </div>
+
+          <!-- Gabinete #3 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/gabinetes/corsair_4000x.png" class="pic-1" alt="gabinete corsair 4000x" >
+                <img src="./assets/img/products/gabinetes/corsair_4000x_2.jpg" class="pic-2" alt="lateral gabinete corsair 4000x" >
+              </a>
+              <span class="discount">15% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Corsair</a></span>
+              <h3 class="title"><a href="">4000x</a></h3>
+              <div class="price"><span>$18500</span>$15725</div>
+            </div>
+          </div>
+
+          <!-- Gabinete #4 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/gabinetes/corsair_570x.webp" class="pic-1" alt="gabinete corsair 570x">
+                <img src="./assets/img/products/gabinetes/corsair_570x_2.webp" class="pic-2" alt="lateral gabinete corsair 570x" >
+              </a>
+              <span class="discount">15% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Corsair</a></span>
+              <h3 class="title"><a href="">570x</a></h3>
+              <div class="price"><span>$27500</span>$23375</div>
+            </div>
+          </div>
+
+          <!-- Gabinete #5 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/gabinetes/cougar_conquer.png" class="pic-1" alt="gabinete cougar conquer" >
+                <img src="./assets/img/products/gabinetes/cougar_conquer_2.png" class="pic-2" alt="lateral gabinete cougar conquer" >
+              </a>
+              <span class="discount">20% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Cougar</a></span>
+              <h3 class="title"><a href="">Conquer</a></h3>
+              <div class="price"><span>$54000</span>$43200</div>
+            </div>
+          </div>
+
+          <!-- Gabinete #6 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/gabinetes/lianli_pc-011-dynamic.jpg" class="pic-1" alt="gabinete lianli 011 dynamic" >
+                <img src="./assets/img/products/gabinetes/lianli_pc-011-dynamic_2.jpg" class="pic-2" alt="lateral gabinete lianli 011 dynamic" >
+              </a>
+              <span class="discount">10% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Lian-li</a></span>
+              <h3 class="title"><a href="">pc-011-dynamic</a></h3>
+              <div class="price"><span>$54500</span>$49500</div>
+            </div>
+          </div>
+
+          <!-- Gabinete #7 -->
+          <div class="product">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="./assets/img/products/gabinetes/nzxt_h510.jpg" class="pic-1" alt="gabinete nzxt h510">
+                <img src="./assets/img/products/gabinetes/nzxt_h510_2.webp" class="pic-2" alt="lateral gabinete nzxt h510" >
+              </a>
+              <span class="discount">5% Off</span>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">NZXT</a></span>
+              <h3 class="title"><a href="">h510</a></h3>
+              <div class="price"><span>$43500</span>$41325</div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Información -->
+    <div class="container-fluid">
+      <div class="row info--color info__items--align">
+        <div class="offset-lg-2 col-lg-9 col-md-12 col-12">
+
+          <div class="deliver">
+            <div class="info__item">
+              <div class="info__img info__img--width">
+                <i class="fas fa-credit-card info__img--size info__img--position"></i>
+              </div>
+              <div class="info__text">
+                <span>Pagá hasta en 12 cuotas</span>
+                <div>
+                  Con las principales tarjetas de crédito
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="payment">
+            <div class="info__item">
+              <div class="info__img">
+                <i class="fas fa-truck info__img--size info__img__ship--size info__img--position"></i>
+              </div>
+              <div class="info__text">
+                <span>Envíos a todo el país</span>
+                <div>
+                  Despachamos en el día
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="maps">
+            <div class="info__item">
+              <div class="info__img info__img--width">
+                <i class="fas fa-map info__img--size info__img--position"></i>
+              </div>
+              <div class="info__text">
+                <span>Retirá en nuestra sucursal</span>
+                <div>
+                  ¿Dónde estamos?
+                </div> 
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+        
+  
   </main>
   <!-- Fin Main -->
 
@@ -681,37 +739,107 @@
         <section class="col-lg-12 col-xs-12 footer__info">
           <a class="footer__info__links" href="">Quiénes somos</a>
           <a class="footer__info__links" href="">Términos y condiciones</a>
-          <a class="footer__info__links" shref="">Garantía y devoluciones</a>       
+          <a class="footer__info__links" href="">Garantía y devoluciones</a>       
         </section>
       </div>
       <div class="row">
-        <section class="col-lg-6 col-xs-12 footer__redes">
-          <h3>Seguinos en</h3>
+        <section class="col-lg-6 col-xs-12 footer__redes bg-dark">
+          <h3 class="redes__text">Seguinos en</h3>
           <div class="footer__logos--animated">
-              <a class="footer__logo__imagenes--margin" href="https://www.facebook.com.ar/hardbuy" target="blank"><img src="./assets/img/fb_logo.png" alt="logo facebook" width="50" height="50"></a>
-              <a class="footer__logo__imagenes--margin" href="https://www.instagram.com/hardbuy" target="blank"><img src="./assets/img/instagram_logo.png" alt="logo instagram" width="50" height="50"></a>
-              <a class="footer__logo__imagenes--margin" href="https://www.twitter.com/hardbuy" target="blank"><img src="./assets/img/twitter_logo.png" alt="logo twitter" width="50" height="50"></a>
-              <a class="footer__logo__imagenes--margin" href="https://www.youtube.com/hardbuy" target="blank"><img src="./assets/img/youtube_logo.png" alt="logo youtube" width="50" height="50"></a>
+              <div class="icon-cont">
+                <a target="blank" href="https://www.facebook.com.ar/hardbuy">
+                  <i class="fab fa-facebook-f redes__color" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="icon-cont">
+                <a target="blank" href="https://www.twitter.com.ar/hardbuy">
+                  <i class="fab fa-twitter redes__color" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="icon-cont">
+                <a target="blank" href="https://www.instagram.com.ar/hardbuy">
+                  <i class="fab fa-instagram redes__color" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="icon-cont">
+                <a target="blank" href="https://www.youtube.com.ar/hardbuy">
+                  <i class="fab fa-youtube redes__color" aria-hidden="true"></i>
+                </a>
+              </div>
           </div>
         </section>
 
-        <section class="col-lg-6 col-xs-12 footer__contacto">
+        <section class="col-lg-6 col-xs-12 footer__contacto bg-dark">
           <div>
-            <h3>Contacto</h3>
+            <h3 class="redes__text redes__text__contacto">Contacto</h3>
           </div>
           <div class="footer__logos--animated">
-            <a href="https://api.whatsapp.com/send?phone=+5491111111111" target="blank"><img src="./assets/img/wp_logo.png" alt="logo whatsapp" width="50" height="50"></a>
+            <div class="icon-cont">
+              <a target="blank" href="https://api.whatsapp.com/send?phone=+5491111111111">
+                <i class="fab fa-whatsapp redes__color" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </section>
       </div>
     </div>
   </footer>
 
-
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" crossorigin="anonymous"></script>
+
+  <!-- Script OwlCarousel -->
+  <script type="text/javascript">
+		$(document).ready(function() {
+    $("#slider-monitor").owlCarousel({
+        items : 5,
+        itemsDesktop:[1199,4],
+        itemsDesktopSmall:[980,3],
+        itemsMobile : [700,2],
+        itemsTablet: [768,3],
+        pagination:false,
+        navigation:true,
+        navigationText:["",""],
+        autoPlay:false,
+    });
+    $("#slider-procesador").owlCarousel({
+        items : 5,
+        itemsDesktop:[1199,4],
+        itemsDesktopSmall:[980,3],
+        itemsMobile : [700,2],
+        itemsTablet: [768,3],
+        pagination:false,
+        navigation:true,
+        navigationText:["",""],
+        autoPlay:false,
+    });
+    $("#slider-case").owlCarousel({
+        items : 5,
+        itemsDesktop:[1199,4],
+        itemsDesktopSmall:[980,3],
+        itemsMobile : [700,2],
+        itemsTablet: [1000,3],
+        pagination:false,
+        navigation:true,
+        navigationText:["",""],
+        autoPlay:false,
+    });
+    $("#slider-marcas").owlCarousel({
+        items : 4,
+        itemsDesktop:[1199,4],
+        itemsDesktopSmall:[980,3],
+        itemsMobile : [700,2],
+        itemsTablet: [1000,3],
+        pagination:false,
+        navigation:true,
+        navigationText:["",""],
+        autoPlay:false,
+    });
+  });
+  </script>
 
 
 </body>

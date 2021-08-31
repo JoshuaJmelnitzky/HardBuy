@@ -36,68 +36,79 @@
 
 <!-- Inicio body -->
 <body>
-  <!-- Nav --> 
-  <header class="container-fluid nav nav__background--color">
-    <div class="row"> 
-      <div class="offset-lg-2 col-lg-8 col-xs-12">
-        <nav class="navbar navbar-expand-lg navbar-light">
-           <ul class="navbar-nav mr-auto">
-             <li>
-               <a href="../index.html"><img src="../assets/img/logo.png" alt="" width="250px" height="60px"></a>
-             </li>
-          </ul>
-
-          <div class="nav__search">
-            <form class="form-inline my-2 my-lg-0 nav__form nav__search__form">
-              <input class="form-control mr-sm-2 nav__form__search--width" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              <i class="fa fa-search nav__seach__icon"></i>
-            </button> 
+   <!-- Inicio Header -->
+   <header>
+    <div class="container-fluid">
+      <div class="row nav__background--color bg-dark">
+        <div class="col-lg-12 col-9 col-md-12 bg-dark nav--height nav--flex nav--padding">
+          <div class="col-lg-8 col-8">
+            <a href="../index.html"><img src="../assets/img/logo.png" alt="hardbuy_logo" class="nav__logo" ></a> 
+          </div>
+          <div class="search-container search-container__mobile--width search-container__mobile--position">
+            <input type="checkbox" id="checkbox2">
+            <input type="text" name="search" placeholder="Buscar" class="search-input">
+            <a href="#" class="search-btn search-btn__position">
+              <i class="fas fa-search"></i>      
+            </a>
+            <form class="search-container-mobile" action="">
+              <input type="text" class="search" autocomplete="off" placeholder="Buscar...">
             </form>
           </div>
-        </nav>
-      </div>
-    </div>
+        </div>
 
-    <div class="row">
-      <div class="col-lg-12 col-xs-12">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto nav__listas">
-              <li class="nav-item active nav__links">
-                <a class="nav-link" href="./products.html">Productos<span class="sr-only">(current)</span></a>
-              </li>
-              
-              <li class="nav-item dropdown menu nav__links">
-                <a class="nav-link dropdown-toggle" href="./error404.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Arma tu PC
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./error404.html">AMD</a>
-                  <a class="dropdown-item" href="./error404.html">Intel</a>
-                </div>
-              </li>
-  
-              <li class="nav-item nav__links">
-                <a class="nav-link" href="./account.html">Mi Cuenta</a>
-              </li>
-  
-              <li class="nav-item nav__links">
-                <a class="nav-link" href="./help.html">Ayuda</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="offset-lg-2 offset-md-2 col-lg-8 col-md-8 col-3 nav__order nav--flex">
+          <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark fixed-top">
+            <button class="navbar-toggler nav__collapseButton" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="menu">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="menu__lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto nav__listas">
+                <li class="nav-item active nav__links">
+                  <a class="nav-link" href="./products.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown menu  nav__links">
+                  <a class="nav-link dropdown-toggle" href="./buildpc.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Arma tu PC</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./error404.html">AMD</a>
+                    <a class="dropdown-item" href="./error404.html">Intel</a>
+                  </div>
+                </li>
+                <li class="nav-item nav__links">
+                  <a class="nav-link" href="./account.html">Mi Cuenta</a>
+                </li>
+                <li class="nav-item nav__links">
+                  <a class="nav-link" href="./help.html">Ayuda</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
-  <!-- Fin header -->
 
   <!-- Inicio main -->
   <main>
+    <!-- RGB Bar -->
+    <section id="rgbar" class="outer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-xs-12">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario -->
     <div class="container-fluid">
         <div class="row clientes">
             <section class="offset-lg-1 col-xs-12 col-lg-5 new__cliente">
@@ -181,38 +192,58 @@
   <!-- Fin main -->
 
   <!-- Inicio footer -->
-      
   <footer>
     <div class="container-fluid">
       <div class="row">
         <section class="col-lg-12 col-xs-12 footer__info">
           <a class="footer__info__links" href="">Quiénes somos</a>
           <a class="footer__info__links" href="">Términos y condiciones</a>
-          <a class="footer__info__links" shref="">Garantía y devoluciones</a>       
+          <a class="footer__info__links" href="">Garantía y devoluciones</a>       
         </section>
       </div>
       <div class="row">
-        <section class="col-lg-6 col-xs-12 footer__redes">
-          <h3>Seguinos en</h3>
+        <section class="col-lg-6 col-xs-12 footer__redes bg-dark">
+          <h3 class="redes__text">Seguinos en</h3>
           <div class="footer__logos--animated">
-              <a class="footer__logo__imagenes--margin" href="https://www.facebook.com.ar/hardbuy" target="blank"><img src="../assets/img/fb_logo.png" alt="logo facebook" width="50" height="50"></a>
-              <a class="footer__logo__imagenes--margin" href="https://www.instagram.com/hardbuy" target="blank"><img src="../assets/img/instagram_logo.png" alt="logo instagram" width="50" height="50"></a>
-              <a class="footer__logo__imagenes--margin" href="https://www.twitter.com/hardbuy" target="blank"><img src="../assets/img/twitter_logo.png" alt="logo twitter" width="50" height="50"></a>
-              <a class="footer__logo__imagenes--margin" href="https://www.youtube.com/hardbuy" target="blank"><img src="../assets/img/youtube_logo.png" alt="logo youtube" width="50" height="50"></a>
+              <div class="icon-cont">
+                <a target="blank" href="https://www.facebook.com.ar/hardbuy">
+                  <i class="fab fa-facebook-f redes__color" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="icon-cont">
+                <a target="blank" href="https://www.twitter.com.ar/hardbuy">
+                  <i class="fab fa-twitter redes__color" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="icon-cont">
+                <a target="blank" href="https://www.instagram.com.ar/hardbuy">
+                  <i class="fab fa-instagram redes__color" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="icon-cont">
+                <a target="blank" href="https://www.youtube.com.ar/hardbuy">
+                  <i class="fab fa-youtube redes__color" aria-hidden="true"></i>
+                </a>
+              </div>
           </div>
         </section>
 
-        <section class="col-lg-6 col-xs-12 footer__contacto">
+        <section class="col-lg-6 col-xs-12 footer__contacto bg-dark">
           <div>
-            <h3>Contacto</h3>
+            <h3 class="redes__text redes__text__contacto">Contacto</h3>
           </div>
           <div class="footer__logos--animated">
-            <a href="https://api.whatsapp.com/send?phone=+5491111111111" target="blank"><img src="../assets/img/wp_logo.png" alt="logo whatsapp" width="50" height="50"></a>
+            <div class="icon-cont">
+              <a target="blank" href="https://api.whatsapp.com/send?phone=+5491111111111">
+                <i class="fab fa-whatsapp redes__color" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </section>
       </div>
     </div>
   </footer>
+  
 
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

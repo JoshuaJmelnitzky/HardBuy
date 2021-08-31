@@ -17,6 +17,7 @@
     padding-left: 50px;
 }
 
+
 .texto{
     font-size: 20px;
 }
@@ -38,21 +39,17 @@ img#optional{
 
 .navbar-collapse {
     position: absolute;
-    top: 83px;
-    right: 0%;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    width: 142%;
-    transition: all 0.3s ease;
+    top: 70px;
+    right: 0;
+    width: 123%;
+    transition: all .1s ease;
     display: block;
 }
 
 .navbar-collapse.collapsing {
     height: auto !important;
-    margin-left: 50%;
-    right: 100%;
-    transition: all 0.3s ease;
+    margin-left: 0;
+    right: 150px;
 }
 
 .navbar-collapse.show {
@@ -91,6 +88,9 @@ img#optional{
     display: none;
 }
 
+.search-container-mobile{
+    display: none;
+}
 
 }
 

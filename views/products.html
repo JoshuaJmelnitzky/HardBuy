@@ -37,360 +37,361 @@
 
 <!-- Inicio body -->
 <body>
-  <!-- Nav --> 
-  <header class="container-fluid nav nav__background--color">
-    <div class="row"> 
-      <div class="offset-lg-2 col-lg-8 col-xs-12">
-        <nav class="navbar navbar-expand-lg navbar-light">
-           <ul class="navbar-nav mr-auto">
-             <li>
-               <a href="../index.html"><img src="../assets/img/logo.png" alt="" width="250px" height="60px"></a>
-             </li>
-          </ul>
-
-          <div class="nav__search">
-            <form class="form-inline my-2 my-lg-0 nav__form nav__search__form">
-              <input class="form-control mr-sm-2 nav__form__search--width" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              <i class="fa fa-search nav__seach__icon"></i>
-            </button> 
+   <!-- Inicio Header -->
+   <header>
+    <div class="container-fluid">
+      <div class="row nav__background--color bg-dark">
+        <div class="col-lg-12 col-9 col-md-12 bg-dark nav--height nav--flex nav--padding">
+          <div class="col-lg-8 col-8">
+            <a href="../index.html"><img src="../assets/img/logo.png" alt="hardbuy_logo" class="nav__logo" ></a> 
+          </div>
+          <div class="search-container search-container__mobile--width search-container__mobile--position">
+            <input type="checkbox" id="checkbox2">
+            <input type="text" name="search" placeholder="Buscar" class="search-input">
+            <a href="#" class="search-btn search-btn__position">
+              <i class="fas fa-search"></i>      
+            </a>
+            <form class="search-container-mobile" action="">
+              <input type="text" class="search" autocomplete="off" placeholder="Buscar...">
             </form>
           </div>
-        </nav>
-      </div>
-    </div>
+        </div>
 
-    <div class="row">
-      <div class="col-lg-12 col-xs-12">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto nav__listas">
-              <li class="nav-item active nav__links">
-                <a class="nav-link" href="./products.html">Productos<span class="sr-only">(current)</span></a>
-              </li>
-              
-              <li class="nav-item dropdown menu nav__links">
-                <a class="nav-link dropdown-toggle" href="./error404.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Arma tu PC
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./error404.html">AMD</a>
-                  <a class="dropdown-item" href="./error404.html">Intel</a>
-                </div>
-              </li>
-  
-              <li class="nav-item nav__links">
-                <a class="nav-link" href="./account.html">Mi Cuenta</a>
-              </li>
-  
-              <li class="nav-item nav__links">
-                <a class="nav-link" href="./help.html">Ayuda</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="offset-lg-2 offset-md-2 col-lg-8 col-md-8 col-3 nav__order nav--flex">
+          <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark fixed-top">
+            <button class="navbar-toggler nav__collapseButton" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="menu">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="menu__lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto nav__listas">
+                <li class="nav-item active nav__links">
+                  <a class="nav-link" href="./products.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown menu  nav__links">
+                  <a class="nav-link dropdown-toggle" href="./buildpc.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Arma tu PC</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./error404.html">AMD</a>
+                    <a class="dropdown-item" href="./error404.html">Intel</a>
+                  </div>
+                </li>
+                <li class="nav-item nav__links">
+                  <a class="nav-link" href="./account.html">Mi Cuenta</a>
+                </li>
+                <li class="nav-item nav__links">
+                  <a class="nav-link" href="./help.html">Ayuda</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
-  <!-- Fin header -->
-
 
   <main>
-    <!-- Inicio main -->       
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-xs-12 clasificacionProductos">
-                
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            <h3>Procesadores y Disipadores</h3>
-                            <i class="fas fa-chevron-down clasificacion__arrow"></i>
-                          </button>
-                        </h2>
-                      </div>
-                  
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <div><a href=""> - Procesador AMD</a></div>
-                          <div><a href=""> - Procesador Intel</a></div>
-                          <div><a href=""> - Soluciones térmicas</a></div>
-                          <div><a href=""> - Disipadores</a></div>
-                        </div>
-                      </div>
-                    </div>
+  <!-- Inicio main -->  
 
-                    
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">              
-                            <h3>Motherboards</h3>
-                            <i class="fas fa-chevron-down clasificacion__arrow"></i>
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <div><a href=""> - Motherboard AMD</a></div>
-                            <div><a href=""> - Motherboard Intel</a></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <h3>Placas de video</h3>
-                            <i class="fas fa-chevron-down clasificacion__arrow"></i>
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <div><a href=""> - Placas Radeon</a></div>
-                            <div><a href=""> - Placas Nvidia</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  
-                  <div class="card">
-                    <div class="card-header" id="headingFour">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                          <h3>Memorias RAM</h3>
-                          <i class="fas fa-chevron-down clasificacion__arrow"></i>
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                      <div class="card-body">
-                          <div><a href=""> - Memorias DDR3</a></div>
-                          <div><a href=""> - Memorias DDR4</a></div>
-                          <div><a href=""> - Memorias SODIMM</a></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header" id="headingFive">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                          <h3>Gabinetes, fuentes y coolers</h3>
-                          <i class="fas fa-chevron-down clasificacion__arrow"></i>
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                      <div class="card-body">
-                          <div><a href=""> - Gabinetes</a></div>
-                          <div><a href=""> - Fuentes de alimentación</a></div>
-                          <div><a href=""> - Ventiladores</a></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header" id="headingSix">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                          <h3>Almacenamiento</h3>
-                          <i class="fas fa-chevron-down clasificacion__arrow"></i>
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                      <div class="card-body">
-                          <div><a href=""> - Discos sólidos</a></div>
-                          <div><a href=""> - Discos duros</a></div>
-                          <div><a href=""> - Pendrives</a></div>
-                          <div><a href=""> - Discos externos</a></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header" id="headingSeven">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                          <h3>Monitores</h3>
-                          <i class="fas fa-chevron-down clasificacion__arrow"></i>
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-                      <div class="card-body">
-                          <div><a href=""> - Resolución Full HD</a></div>
-                          <div><a href=""> - Resolución 2k</a></div>
-                          <div><a href=""> - Tasa de refresco 144hz</a></div>
-                          <div><a href=""> - Tasa de refresco 240hz</a></div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-            </div>
-    
-
-    
-            <div class="col-lg-6 col-xs-12">
-                <section class="ofertas ofertas__productos">
-                    <div class="ofertas__container ofertas__container__productos--padding">
-                        <div>
-                            <div class="ofertas__image">
-                                <img src="../assets/img/micros/celeron.png" alt="procesador celeron" width="100" height="100">
-                            </div>
-                            <div class="ofertas__content products__content">
-                                <ul>
-                                    <li>Intel Celeron</li>
-                                    <li class="price">$8000</li>
-                                    <li><input type="button" value="Añadir al carrito"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="ofertas__image">
-                                <img src="../assets/img/micros/pentium.png" alt="procesador pentium" width="100" height="100">
-                            </div>
-                            <div class="ofertas__content products__content">
-                                <ul>
-                                    <li>Intel Pentium</li>
-                                    <li class="price">$10000</li>
-                                    <li><input type="button" value="Añadir al carrito"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="ofertas__image">
-                                <img src="../assets/img/micros/i3.png" alt="procesador i3 9100f" width="100" height="100">
-                            </div>
-                            <div class="ofertas__content products__content">
-                                <ul>
-                                    <li>Intel i3 9100f</li>
-                                    <li class="price">$13000</li>
-                                    <li><input type="button" value="Añadir al carrito"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <div  class="ofertas__image">
-                                <img src="../assets/img/micros/i3-11th.png" alt="procesador i3 11gen" width="100" height="100">
-                            </div>
-                            <div class="ofertas__content products__content">
-                                <ul>
-                                    <li>Intel i3 11gen</li>
-                                    <li class="price">$20000</li>
-                                    <li><input type="button" value="Añadir al carrito"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <div  class="ofertas__image">
-                                <img src="../assets/img/micros/i5-9400f.png" alt="procesador i5 9400f" width="100" height="100">
-                            </div>
-                            <div class="ofertas__content products__content">
-                                <ul>
-                                    <li>Intel i5 9400f</li>
-                                    <li class="price">$23000</li>
-                                    <li><input type="button" value="Añadir al carrito"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <div  class="ofertas__image">
-                                <img src="../assets/img/micros/i5-11th.png" alt="procesaor i5 11gen" width="100" height="100">
-                            </div>
-                            <div class="ofertas__content products__content">
-                                <ul>
-                                    <li>Intel i5 11gen</li>
-                                    <li class="price">$25000</li>
-                                    <li><input type="button" value="Añadir al carrito"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <div  class="ofertas__image">
-                                <img src="../assets/img/micros/i7-10700ka.png"  alt="procesador i7 10700ka" width="100" height="100">
-                            </div>
-                            <div class="ofertas__content products__content">
-                                <ul>
-                                    <li>Intel i7 10700ka</li>
-                                    <li class="price">$29000</li>
-                                    <li><input type="button" value="Añadir al carrito"></li>
-                                </ul>
-                            </div>                 
-                        </div>
-                        <div>
-                            <div  class="ofertas__image">
-                                <img src="../assets/img/micros/i9.png" alt="procesador i9 9900k" width="100" height="100">
-                            </div>
-                            <div class="ofertas__content products__content">
-                                <ul>
-                                    <li>Intel i9 9900k</li>
-                                    <li class="price">$35000</li>
-                                    <li><input type="button" value="Añadir al carrito"></li>
-                                </ul>
-                            </div>                 
-                        </div>
-                        <div>
-                            <div  class="ofertas__image">
-                                <img src="../assets/img/micros/i9-11th.png" alt="procesador i9 11 gen" width="100" height="100">
-                            </div>
-                            <div class="ofertas__content products__content">
-                                <ul>
-                                    <li>Intel i9 11gen</li>
-                                    <li class="price">$40000</li>
-                                    <li><input type="button" value="Añadir al carrito"></li>
-                                </ul>
-                            </div>                 
-                        </div>
-                    </div>   
-                </section> 
-            </div>
-        </div> 
-    </div>
-    <!-- Fin main -->
-
-    <!-- Inicio footer -->
-    <footer>
+    <!-- RGB Bar -->
+    <section id="rgbar" class="outer">
       <div class="container-fluid">
         <div class="row">
-          <section class="col-lg-12 col-xs-12 footer__info">
-            <a class="footer__info__links" href="">Quiénes somos</a>
-            <a class="footer__info__links" href="">Términos y condiciones</a>
-            <a class="footer__info__links" shref="">Garantía y devoluciones</a>       
-          </section>
-        </div>
-        <div class="row">
-          <section class="col-lg-6 col-xs-12 footer__redes">
-            <h3>Seguinos en</h3>
-            <div class="footer__logos--animated">
-                <a class="footer__logo__imagenes--margin" href="https://www.facebook.com.ar/hardbuy" target="blank"><img src="../assets/img/fb_logo.png" alt="logo facebook" width="50" height="50"></a>
-                <a class="footer__logo__imagenes--margin" href="https://www.instagram.com/hardbuy" target="blank"><img src="../assets/img/instagram_logo.png" alt="logo instagram" width="50" height="50"></a>
-                <a class="footer__logo__imagenes--margin" href="https://www.twitter.com/hardbuy" target="blank"><img src="../assets/img/twitter_logo.png" alt="logo twitter" width="50" height="50"></a>
-                <a class="footer__logo__imagenes--margin" href="https://www.youtube.com/hardbuy" target="blank"><img src="../assets/img/youtube_logo.png" alt="logo youtube" width="50" height="50"></a>
-            </div>
-          </section>
+          <div class="col-lg-12 col-xs-12">
 
-          <section class="col-lg-6 col-xs-12 footer__contacto">
-            <div>
-              <h3>Contacto</h3>
-            </div>
-            <div class="footer__logos--animated">
-              <a href="https://api.whatsapp.com/send?phone=+5491111111111" target="blank"><img src="../assets/img/wp_logo.png" alt="logo whatsapp" width="50" height="50"></a>
-            </div>
-          </section>
+          </div>
         </div>
       </div>
-    </footer>
-    <!-- Fin footer -->
+    </section>    
+    
+    <!-- Inicio productos -->
+    <div class="container clasificacion">
+      <div class="row clasificacion__mobile--justify">
+        <!-- Clasificación de productos -->
+        <div class="col-lg-3 clasificacion__background">
+          <div class="clasificacion__item">
+            <h2 class="clasificacion__titulo clasificacion__border">Carrito</h2>
+            <p>No hay productos en el carrito :(</p>
+          </div>
+          <div  class="clasificacion__item">
+            <h2 class="clasificacion__titulo  clasificacion__border">Categorías</h2>
+            <ul>
+              <li>Procesadores</li>
+              <li>Motherboard</li>
+              <li>Placas de video</li>
+              <li>Memorias RAM</li>
+              <li>Gabinetes</li>
+              <li>Monitores</li>
+              <li>Fuentes</li>
+              <li>Almacenamiento</li>
+              <li>Disipador</li>
+            </ul>
+          </div>
+          <div class="clasificacion__item">
+            <h2 class="clasificacion__titulo  clasificacion__border">Buscar</h2>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+
+          <div>
+            <h2 class="clasificacion__titulo clasificacion__border">Filtros</h2>
+            <input class="filtros filtros__width btn__filtrar__campos" type="text" placeholder="min">
+            <span>a</span>
+            <input class="filtros filtros__width btn__filtrar__campos" type="text" placeholder="max">
+            <button class="btn btn-outline-success btn__filtrar" type="submit">Filtrar</button>
+          </div>
+        </div>
+
+        <!-- Listado de productos -->
+        <div class="col-lg-9 col-10 productos" style="display: flex; flex-wrap: wrap; margin-top: 50px; margin-bottom: 50px;">
+          <!-- Producto #1 -->
+          <div class="product product__background product__border productos__margin col-lg-4 col-md-6">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="../assets/img/products/motherboard/rog_b550-f.jpg" class="pic-1" alt="placa madre rog b550-f">
+                <img src="../assets/img/products/motherboard/rog_b550-f_2.jpg" class="pic-2" alt="conectores placa madre rog b550-f" >
+              </a>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Asus</a></span>
+              <h3 class="title"><a href="">ROG B550-f</a></h3>
+              <div class="price">$28990</div>
+            </div>
+          </div>
+
+          <!-- Producto #2 -->
+          <div class="product product__background productos__margin product__border col-lg-4 col-md-6">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="../assets/img/products/fuentes/seasonic_focus_gx850.jpg" class="pic-1" alt="fuente seasonic gx850">
+                <img src="../assets/img/products/fuentes/seasonic_focus_gx850_2.jpg" class="pic-2" alt="fuente seasonic gx850" >
+              </a>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Seasonic</a></span>
+              <h3 class="title"><a href="">Focus gx850</a></h3>
+              <div class="price">$60021</div>
+            </div>
+          </div>
+  
+          <!-- Producto #3 -->
+          <div class="product product__background productos__margin product__border col-lg-4 col-md-6">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="../assets/img/products/fuentes/corsair_rm_750.jpg" class="pic-1" alt="fuente corsair rm750">
+                <img src="../assets/img/products/fuentes/corsair_rm_750_2.jpg" class="pic-2" alt="caja fuente corsair rm750" >
+              </a>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Corsair</a></span>
+              <h3 class="title"><a href="">RM750</a></h3>
+              <div class="price">$24500</div>
+            </div>
+          </div>
+
+          <!-- Producto #4 -->
+          <div class="product product__background productos__margin  product__border col-lg-4 col-md-6">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="../assets/img/products/gpu/rog_3070.jpg" class="pic-1" alt="caja placa de video asus rtx3070">
+                <img src="../assets/img/products/gpu/rog_3070_2.jpg" class="pic-2" alt="placa de video asus rtx3070" >
+              </a>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Asus</a></span>
+              <h3 class="title"><a href="">ROG RTX 3070</a></h3>
+              <div class="price">$389000</div>
+            </div>
+          </div>
+
+          <!-- Producto #5 -->
+          <div class="product product__background productos__margin  product__border col-lg-4 col-md-6">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="../assets/img/products/motherboard/aorus_x570.jpg" class="pic-1" alt="placa madre aorus x570">
+                <img src="../assets/img/products/motherboard/aorus_x570_2.jpg" class="pic-2" alt="conectores placa madre aorus x570" >
+              </a>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Gigabyte</a></span>
+              <h3 class="title"><a href="">Aorus x570</a></h3>
+              <div class="price">$38989</div>
+            </div>
+          </div>
+  
+          <!-- Producto #6 -->
+          <div class="product product__background  productos__margin  product__border col-lg-4 col-md-6">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="../assets/img/products/gpu/aorus_xtreme_3080.jpg" class="pic-1" alt="caja placa de video aorus rtx3080">
+                <img src="../assets/img/products/gpu/aorus_xtreme_3080_2.jpg" class="pic-2" alt="placa de video aorus rtx3080" >
+              </a>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Gigabyte</a></span>
+              <h3 class="title"><a href="">Aorus Xtreme RTX3080</a></h3>
+              <div class="price">$312000</div>
+            </div>
+          </div>
+
+          <!-- Producto #7 -->
+          <div class="product product__background productos__margin product__border col-lg-4 col-md-6">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="../assets/img/products/waterColling/kraken_z63.jpg" class="pic-1" alt="refrigeración líquida nzxt kraken z63">
+                <img src="../assets/img/products/waterColling/kraken_z63_2.jpg" class="pic-2" alt="radiador nzxt kraken z63" >
+              </a>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">NZXT</a></span>
+              <h3 class="title"><a href="">Kraken z63</a></h3>
+              <div class="price">$80799</div>
+            </div>
+          </div>
+
+          <!-- Producto #8 --> 
+          <div class="product product__background  productos__margin product__border col-lg-4 col-md-6">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="../assets/img/products/ram/trident_z_royale.jpg" class="pic-1" alt="ram tridentZ silver">
+                <img src="../assets/img/products/ram/tridez_z_royale_2.jpg" class="pic-2" alt="ram tridentZ gold" >
+              </a>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">TridentZ</a></span>
+              <h3 class="title"><a href="">Royal 2x8gb</a></h3>
+              <div class="price">$77699</div>
+            </div>
+          </div>
+
+          <!-- Producto #9 -->
+          <div class="product product__background  productos__margin product__border col-lg-4 col-md-6">
+            <div class="product-image">
+              <a href="" class="image">
+                <img src="../assets/img/products/ssd/corsair_mp510.jpg" class="pic-1" alt="memoria ssd corsair mp510">
+                <img src="../assets/img/products/ssd/corsair_mp510_2.jpg" class="pic-2" alt="caja memoria ssd corsair mp510" >
+              </a>
+              <a href="" class="cart">Añadir al Carrito</a>
+              <ul class="links">
+                <li class="links__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              </ul>  
+            </div>
+            <div class="content">
+              <span class="category"><a href="">Corsair</a></span>
+              <h3 class="title"><a href="">MP510 48gb</a></h3>
+              <div class="price">$12596</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </main>
+
+  <!-- Fin main -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <section class="col-lg-12 col-xs-12 footer__info">
+          <a class="footer__info__links" href="">Quiénes somos</a>
+          <a class="footer__info__links" href="">Términos y condiciones</a>
+          <a class="footer__info__links" href="">Garantía y devoluciones</a>       
+        </section>
+      </div>
+      <div class="row">
+        <section class="col-lg-6 col-xs-12 footer__redes bg-dark">
+          <h3 class="redes__text">Seguinos en</h3>
+          <div class="footer__logos--animated">
+              <div class="icon-cont">
+                <a target="blank" href="https://www.facebook.com.ar/hardbuy">
+                  <i class="fab fa-facebook-f redes__color" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="icon-cont">
+                <a target="blank" href="https://www.twitter.com.ar/hardbuy">
+                  <i class="fab fa-twitter redes__color" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="icon-cont">
+                <a target="blank" href="https://www.instagram.com.ar/hardbuy">
+                  <i class="fab fa-instagram redes__color" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="icon-cont">
+                <a target="blank" href="https://www.youtube.com.ar/hardbuy">
+                  <i class="fab fa-youtube redes__color" aria-hidden="true"></i>
+                </a>
+              </div>
+          </div>
+        </section>
+
+        <section class="col-lg-6 col-xs-12 footer__contacto bg-dark">
+          <div>
+            <h3 class="redes__text redes__text__contacto">Contacto</h3>
+          </div>
+          <div class="footer__logos--animated">
+            <div class="icon-cont">
+              <a target="blank" href="https://api.whatsapp.com/send?phone=+5491111111111">
+                <i class="fab fa-whatsapp redes__color" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </footer>
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
