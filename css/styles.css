@@ -241,6 +241,9 @@ footer h3 {
   margin-top: 50px;
   margin-bottom: 50px; }
 
+.visibility {
+  display: none; }
+
 .error {
   height: 800px;
   display: flex;
@@ -696,7 +699,8 @@ input[type="checkbox"]:checked ~ label span:nth-last-child(3) {
   bottom: -75px;
   left: 50%;
   transition: .5s;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  cursor: pointer; }
 
 .product .cart:hover {
   opacity: 1;
