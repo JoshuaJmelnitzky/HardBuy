@@ -557,6 +557,7 @@ input[type="checkbox"]:checked ~ label span:nth-last-child(3){
     bottom: -75px;
     left: 50%;
     transition: .5s;
+    margin-bottom: 0px;
 }
 
 .product .cart:hover{

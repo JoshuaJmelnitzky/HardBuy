@@ -1,26 +1,17 @@
-alert('Bienvenido a HardBuy - Tienda de hardware')
 
-do{
-    let option = showMainMenu();
-    let choice = showProducts(option);
+let addProductCart = document.getElementById('first');
 
-    if(option === 5) break;
-    let qty = parseInt(prompt(SelectedQty));
-
-    addToCart(choice, qty, option);
-
-    resp = prompt('¿Desea agregar mas productos a la cuenta? SI/NO');
-
-    console.log(resp);
-
-}while(resp === "SI");
+let texto = document.createElement('ul');
+let list = document.getElementById('productCart');
 
 
+let valor = document.getElementById('product_name1').innerHTML;
+let price = document.getElementById('product_price1').innerHTML;
 
-if(cart > 0){
-    alert(`Su compra tiene un total de $${cart}`);
-    let pay = showPaymentMethods();
-    methodPayment(pay);
-    alert('Gracias por su compra :)');
-}
+
+addProductCart.onclick = () => {
+    texto.innerHTML += `<li>${valor} - ${price}</li>`;
+    list.appendChild(texto);
+
+};
 
