@@ -7,11 +7,12 @@ const addToCart = (cart, price, name) => {
     cart.onclick = () => {
         let docu = document.getElementById('classification');
         docu.className = "visibility";
-    
+
         texto.innerHTML += `<li>${name} - ${price}</li>`;
         list.appendChild(texto);
     };
 }
+
 
 /* Producto 1 */
 const addProductCart1 = document.getElementById('addToCart1');
