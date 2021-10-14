@@ -14,6 +14,7 @@ const addToCart = (cart, price, name) => {
 }
 
 
+
 /* Producto 1 */
 const addProductCart1 = document.getElementById('addToCart1');
 let valor1 = document.getElementById('productName1').innerHTML;
